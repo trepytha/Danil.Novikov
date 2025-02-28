@@ -1,0 +1,40 @@
+.not-found-error {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 12px;
+	height: 400px;
+}
+.error-title {
+	color: #333;
+	text-align: center;
+	font-family: Roboto;
+	font-size: 96px;
+	font-style: normal;
+	font-weight: 500;
+}
+.primary-btn {
+	color: #fff;
+	border: none;
+	border-radius: 12px;
+	padding: 18px 40px;
+	font-size: 15px;
+	cursor: pointer;
+	background-color: #bf0603;
+	margin-top: 48px;
+	border: 1px solid #bf0603;
+}
+.primary-btn:hover {
+	background-color: #fff;
+	color: #bf0603;
+	border: 1px solid #bf0603;
+}
+.error-text {
+	color: rgba(0, 0, 0, 0.8);
+	text-align: center;
+	font-family: Roboto;
+	font-size: 42.625px;
+	font-style: normal;
+	font-weight: 700;
+}

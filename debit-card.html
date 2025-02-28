@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="css/footer.css" />
+		<link rel="stylesheet" href="css/header.css" />
+		<link rel="stylesheet" href="css/debit-card.css" />
+		<title>Дебетовая карта W-Bank</title>
+	</head>
+	<body>
+		<div class="app">
+			<header class="header">
+				<div class="header-content">
+					<svg
+						class="logo"
+						width="95"
+						height="34"
+						viewBox="0 0 95 34"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							d="M47.2971 15.7154C46.6416 15.4632 45.7842 15.3877 44.8512 15.3877H39.6564V13.7738H48.5832V11H36V23.0031H44.5234C45.7086 23.0031 46.5909 22.9023 47.2468 22.6499C48.6337 22.1204 49.5667 20.8344 49.5667 19.1449C49.5667 17.4303 48.6841 16.245 47.2971 15.7154ZM45.4815 19.8762C45.2799 19.9519 45.0025 19.977 44.6493 19.977H39.6564V18.0605H44.6493C45.0529 18.0605 45.3806 18.0859 45.6329 18.2119C45.9354 18.3632 46.0868 18.6406 46.0868 18.9935C46.0868 19.3466 45.9103 19.7249 45.4815 19.8762Z"
+							fill="#333333"
+						></path>
+						<path
+							d="M59.8189 11H54.473L49.5557 23.0031H53.6913L54.3721 21.2631H59.9197L60.6259 23.0031H64.7363L59.8189 11ZM55.2798 18.6153L57.02 13.7738H57.2973L59.0372 18.6153H55.2798Z"
+							fill="#333333"
+						></path>
+						<path
+							d="M69.4424 18.5399V23.0032H65.7861V11H69.4424V15.3878H75.3179V11H78.9744V23.0032H75.3179V18.5399H69.4424Z"
+							fill="#333333"
+						></path>
+						<path
+							d="M84.762 18.4643V23.0032H81.1055V11H84.762V15.5139H85.7706L90.1836 11H94.7728L88.9226 16.7494L94.9999 23.0032H90.133L85.7706 18.4643H84.762Z"
+							fill="#333333"
+						></path>
+					</svg>
+
+					<nav class="nav-links">
+						<a href="#" class="nav-item">Частным лицам</a>
+						<a href="#" class="nav-item">Бизнесу</a>
+						<a href="#" class="nav-item">Премиум</a>
+						<a href="#" class="nav-item">Еще</a>
+					</nav>
+
+					<button class="profile-btn">
+						<span>Личный кабинет</span>
+						<svg
+							class="profile-icon"
+							width="24"
+							height="24"
+							viewBox="0 0 24 24"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								d="M3.00024 19C3.00024 17.4087 3.63239 15.8826 4.7576 14.7574C5.88282 13.6321 7.40895 13 9.00024 13H15.0002C16.5915 13 18.1177 13.6321 19.2429 14.7574C20.3681 15.8826 21.0002 17.4087 21.0002 19V22H3.00024V19Z"
+								fill="#126DF7"
+							></path>
+							<path
+								opacity="0.35"
+								fill-rule="evenodd"
+								clip-rule="evenodd"
+								d="M16.2232 2.952C16.0158 3.35009 15.7031 3.68366 15.3193 3.9164C14.9355 4.14914 14.4951 4.27213 14.0462 4.272H11.5902C10.9393 4.27226 10.3151 4.53103 9.85493 4.99141C9.39474 5.45178 9.13623 6.07607 9.13623 6.727V10.607C9.79445 11.1501 10.5935 11.4949 11.4403 11.6011C12.287 11.7073 13.1464 11.5705 13.9184 11.2068C14.6903 10.843 15.343 10.2673 15.8001 9.54667C16.2572 8.82608 16.5001 7.99036 16.5002 7.137V4.273C16.5002 3.803 16.4002 3.356 16.2222 2.953L16.2232 2.952Z"
+								fill="#126DF7"
+							></path>
+							<path
+								fill-rule="evenodd"
+								clip-rule="evenodd"
+								d="M16.2232 2.952C15.9669 2.37119 15.5472 1.87743 15.0153 1.53086C14.4833 1.18429 13.8621 0.99985 13.2272 1H7.50025V7.136C7.4994 7.79966 7.64568 8.45526 7.92856 9.05562C8.21145 9.65597 8.6239 10.1862 9.13625 10.608V6.728C9.13625 6.07689 9.3949 5.45246 9.8553 4.99205C10.3157 4.53165 10.9401 4.273 11.5912 4.273H14.0462C14.9922 4.273 15.8132 3.737 16.2232 2.953V2.952Z"
+								fill="url(#paint0_linear_11_3099)"
+							></path>
+							<defs>
+								<linearGradient
+									id="paint0_linear_11_3099"
+									x1="10.5002"
+									y1="1"
+									x2="10.5002"
+									y2="10.608"
+									gradientUnits="userSpaceOnUse"
+								>
+									<stop stop-color="#126DF7"></stop>
+									<stop
+										offset="1"
+										stop-color="#126DF7"
+										stop-opacity="0.5"
+									></stop>
+								</linearGradient>
+							</defs>
+						</svg>
+					</button>
+				</div>
+			</header>
+
+			<!-- Первая секция -->
+			<nav class="navigation">
+				<div class="breadcrumb">
+					<span class="breadcrumb-item">Дебетовые карты</span>
+					<button class="chevron-button" aria-label="Navigate">
+						<svg
+							width="17"
+							height="16"
+							viewBox="0 0 17 16"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+							class="chevron"
+						>
+							<path
+								d="M8.28716 12.707C8.19491 12.8025 8.08457 12.8787 7.96256 12.9311C7.84056 12.9835 7.70934 13.0111 7.57656 13.0122C7.44378 13.0134 7.3121 12.9881 7.18921 12.9378C7.06631 12.8875 6.95466 12.8133 6.86076 12.7194C6.76687 12.6255 6.69262 12.5138 6.64234 12.3909C6.59206 12.268 6.56676 12.1364 6.56791 12.0036C6.56906 11.8708 6.59665 11.7396 6.64906 11.6176C6.70147 11.4956 6.77765 11.3852 6.87316 11.293L10.1662 7.99998L6.87316 4.70698C6.691 4.51838 6.59021 4.26578 6.59249 4.00358C6.59476 3.74138 6.69993 3.49057 6.88534 3.30516C7.07075 3.11975 7.32156 3.01458 7.58376 3.01231C7.84595 3.01003 8.09856 3.11082 8.28716 3.29298L11.5802 6.58598C11.9551 6.96104 12.1657 7.46965 12.1657 7.99998C12.1657 8.53031 11.9551 9.03892 11.5802 9.41398L8.28716 12.707Z"
+								fill="black"
+								fill-opacity="0.54"
+							></path>
+						</svg>
+					</button>
+					<span class="breadcrumb-item">Black</span>
+				</div>
+			</nav>
+
+			<section class="content">
+				<div class="hero">
+					<h1 class="hero-title">
+						Дебетовая карта Black c кэшбэком рублями на всё
+					</h1>
+					<p class="hero-description">
+						Зарабатывайте кэшбэк рублями, а не бонусами. Оплачивайте счета и
+						переводите деньги без комиссии. Закажите дебетовую карту с платежной
+						системой «Мир»
+					</p>
+					<a class="cta-container" href="not_found.html">
+						<button class="primary-btn">Оформить карту</button>
+					</a>
+				</div>
+
+				<figure class="card-showcase">
+					<img
+						src="https://cdn.builder.io/api/v1/image/assets/TEMP/58e09957e13773f4ea30d8ad7dfad00d37fa78f6"
+						alt="Black debit card with features"
+						class="card-image"
+					/>
+				</figure>
+			</section>
+
+			<!-- Картхолдер -->
+			<section class="promo-section">
+				<section class="features-section">
+					<div class="features-container">
+						<div class="features-grid">
+							<article class="feature-card">
+								<div class="feature-content">
+									<img
+										src="https://cdn.builder.io/api/v1/image/assets/310084eb7fec4ac5a23258c209abbce1/86b8f1a786ccaa104e0c6dc92a4930edc53523d6fc1a94fa60365f7fa5845447?placeholderIfAbsent=true"
+										alt="Cashback icon"
+										class="feature-icon"
+									/>
+									<h2 class="feature-title">Кэшбэк рублями до 30%</h2>
+									<p class="feature-description">
+										За покупки по спецпредложениям<br />
+										партнеров банка
+									</p>
+								</div>
+							</article>
+
+							<article class="feature-card">
+								<div class="feature-content">
+									<img
+										src="https://cdn.builder.io/api/v1/image/assets/310084eb7fec4ac5a23258c209abbce1/7299abd78b8f5dce422956a03c5f79fa538989bdf6a1047598f0f5edec0ddd68?placeholderIfAbsent=true"
+										alt="Service fee icon"
+										class="feature-icon"
+									/>
+									<h2 class="feature-title">0 ₸ за обслуживание</h2>
+									<p class="feature-description">
+										Если хранить от 50 000 ₸ на карте,<br />
+										вкладах, накопительных счетах<br />
+										и в инвестициях. Иначе — 199 ₸<br />
+										в месяц
+									</p>
+								</div>
+							</article>
+
+							<article class="feature-card feature-card-dark">
+								<div class="feature-content">
+									<img
+										src="https://cdn.builder.io/api/v1/image/assets/310084eb7fec4ac5a23258c209abbce1/008b52b62f45bdd58ba549090a51e5cb4a5b1c0cbde30851798fad313ab605b2?placeholderIfAbsent=true"
+										alt="Payments icon"
+										class="feature-icon"
+									/>
+									<h2 class="feature-title">
+										Платежи и переводы<br />без комиссии
+									</h2>
+									<div class="transfer-info">
+										<span class="highlight">Переводы</span>
+										на карты других банков, штрафов связи — без комиссии с
+										картой W‑Банка
+									</div>
+								</div>
+							</article>
+						</div>
+					</div>
+				</section>
+
+				<section class="promo-banner">
+					<div class="banner-container">
+						<div class="banner-content">
+							<div class="banner-text">
+								<h2 class="banner-title">
+									Дарим картхолдер<br />
+									при оформлении карты
+								</h2>
+								<p class="banner-description">
+									Удобно хранить банковские карты и приятные мелочи
+								</p>
+								<button class="banner-button">Оформить карту</button>
+							</div>
+						</div>
+					</div>
+				</section>
+			</section>
+
+			<!-- Получите Black -->
+			<section class="steps-process">
+				<div class="steps-process__header">
+					<h1 class="steps-process__title">Получите Black уже сегодня</h1>
+				</div>
+
+				<div class="steps-process__content">
+					<article class="step-card">
+						<span class="step-card__number">1</span>
+						<p class="step-card__description">
+							Заполните онлайн-заявку — посещать банк не нужно
+						</p>
+					</article>
+
+					<article class="step-card">
+						<span class="step-card__number">2</span>
+						<p class="step-card__description">
+							Пользуйтесь банком в личном кабинете
+						</p>
+					</article>
+
+					<article class="step-card">
+						<span class="step-card__number">3</span>
+						<p class="step-card__description">
+							Пополняйте карту в личном кабинете с карт других банков без
+							комиссии
+						</p>
+					</article>
+				</div>
+			</section>
+
+			<!-- Форма -->
+			<section class="container">
+				<div class="left-panel">
+					<h2 class="card-title">Дебетовая карта Black</h2>
+					<article class="card-preview">
+						<img
+							src="https://cdn.builder.io/api/v1/image/assets/TEMP/0f983007e553a58fc0e8206b57d84d2525276df5"
+							alt="Card preview"
+							class="debit-card-image"
+						/>
+						<img
+							src="https://cdn.builder.io/api/v1/image/assets/TEMP/70172f8769aa16cf090f562f4de3d6fbbfb05667"
+							alt="Card chip"
+							class="card-chip"
+						/>
+					</article>
+					<div class="cashback-info">
+						<div class="cashback-icon">₸</div>
+						<div class="cashback-text">
+							<h2 class="cashback-title">Кэшбэк до 3000 ₸ в месяц</h2>
+							<p class="cashback-subtitle">
+								С подпиской Pro лимит кэшбэка — 5000 ₸
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="right-panel">
+					<ddiv class="progress-section">
+						<p class="progress-text">Уже заполнено</p>
+						<p class="progress-percentage">5%</p>
+						<div class="progress-bar">
+							<div class="progress-bar-bg"></div>
+							<div class="progress-bar-fill"></div>
+						</div>
+					</ddiv>
+
+					<div class="card-design-section">
+						<h3 class="section-title">Выберите дизайн карты</h3>
+						<div class="card-designs">
+							<button class="card-design active">
+								<img
+									src="https://cdn.builder.io/api/v1/image/assets/TEMP/27e1934732cfb0d448ab4b135f021df9ac48103a"
+									alt="Card design 1"
+									class="design-image"
+								/>
+							</button>
+							<button class="card-design">
+								<img
+									src="https://cdn.builder.io/api/v1/image/assets/TEMP/0712019dc1021f61adb8a8892827ba4b0a2c2791"
+									alt="Card design 2"
+									class="design-image"
+								/>
+							</button>
+							<button class="card-design">
+								<img
+									src="https://cdn.builder.io/api/v1/image/assets/TEMP/5cfc5669d26e502b5e20c3d2e9913875cfbb20cd"
+									alt="Card design 3"
+									class="design-image"
+								/>
+							</button>
+							<button class="card-design">
+								<img
+									src="https://cdn.builder.io/api/v1/image/assets/TEMP/4a835bef1dbbe3b17efd34e139cdbed2eb93ae2a"
+									alt="Card design 4"
+									class="design-image"
+								/>
+							</button>
+							<button class="card-design">
+								<img
+									src="https://cdn.builder.io/api/v1/image/assets/TEMP/dc247f28282b239568913d8c068005cd1f5770ad"
+									alt="Card design 5"
+									class="design-image"
+								/>
+							</button>
+							<button class="card-design">
+								<img
+									src="https://cdn.builder.io/api/v1/image/assets/TEMP/367fc3f3e7fa414bc61c9debacde73c9d6c4cc77"
+									alt="Card design 6"
+									class="design-image"
+								/>
+							</button>
+						</div>
+
+						<form class="form-section">
+							<div class="form-field category-select">
+								<label class="field-text"
+									>Выберите повышенный кэшбэк (четыре категории)</label
+								>
+								<button class="dropdown-icon">
+									<svg
+										width="16"
+										height="17"
+										viewBox="0 0 16 17"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											fill-rule="evenodd"
+											clip-rule="evenodd"
+											d="M8 12.5639L2 6.72188L3.423 5.37988L8 9.87988L12.577 5.37988L14 6.72188L8 12.5639Z"
+											fill="black"
+											fill-opacity="0.4"
+										></path>
+									</svg>
+								</button>
+							</div>
+
+							<div class="form-field">
+								<label class="field-text">Фамилия, имя и отчество*</label>
+								<span class="bonus-tag">+20%</span>
+							</div>
+
+							<div class="form-row">
+								<div class="form-field half">
+									<label>Мобильный телефон*</label>
+								</div>
+								<div class="form-field half">
+									<label>Электронная почта</label>
+								</div>
+							</div>
+
+							<div class="form-field">
+								<label>Дата рождения*</label>
+							</div>
+
+							<fieldset class="citizenship-section">
+								<legend class="citizenship-title">
+									Гражданство Казахстана?
+								</legend>
+								<div class="radio-group">
+									<label class="radio-option selected">
+										<span class="radio-text">Да</span>
+										<div class="radio-button">
+											<div class="radio-dot"></div>
+										</div>
+									</label>
+									<label class="radio-option">
+										<span class="radio-text">Нет</span>
+										<div class="radio-button empty"></div>
+									</label>
+								</div>
+							</fieldset>
+
+							<hr class="form-divider" />
+
+							<div class="terms-section">
+								<p class="terms-text">
+									Заполняя форму, я принимаю
+									<a href="#" class="link">условия передачи</a>
+								</p>
+								<p class="terms-text">
+									<a href="#" class="link"
+										>информации и использования карты до встречи</a
+									>
+									и даю
+								</p>
+								<p class="terms-text">
+									<a href="#" class="link"
+										>согласие на получение информации о продуктах<br />и услугах
+										Банка и партнеров</a
+									>
+								</p>
+								<button type="submit" class="submit-button">Оформить</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
+
+			<!-- Покупайте как обычно -->
+			<section class="cashback-wrapper">
+				<section class="hero-section">
+					<div class="hero-content">
+						<h1 class="hero-title">
+							Покупайте как обычно.<br />
+							Получайте выгодный кэшбэк в бонусах
+						</h1>
+						<p class="hero-description">
+							До 30% кэшбэк рублями у партнеров банка. До 15% — в любимых
+							категориях
+						</p>
+					</div>
+				</section>
+
+				<section class="benefits-section">
+					<div class="benefits-container">
+						<div class="benefits-grid">
+							<article class="category-card">
+								<div class="card-content">
+									<img
+										src="https://cdn.builder.io/api/v1/image/assets/310084eb7fec4ac5a23258c209abbce1/de03d51f32929410bd28f72e5983ba534f10d2c4e1e2efcbac45d93d5360ca18?placeholderIfAbsent=true"
+										alt="Products category icon"
+										class="category-icon"
+									/>
+									<h2 class="category-title">Продукты</h2>
+									<p class="cashback-text">Кэшбэк до 10%</p>
+								</div>
+							</article>
+
+							<article class="category-card">
+								<div class="card-content">
+									<img
+										src="https://cdn.builder.io/api/v1/image/assets/310084eb7fec4ac5a23258c209abbce1/d4036347184377da6cc9f670eaa853675b3024fdaa3c2e09b3984aad305dc6fc?placeholderIfAbsent=true"
+										alt="Electronics category icon"
+										class="category-icon"
+									/>
+									<h2 class="category-title">Электроника</h2>
+									<p class="cashback-text">Кэшбэк до 15%</p>
+								</div>
+							</article>
+
+							<article class="category-card">
+								<div class="card-content">
+									<img
+										src="https://cdn.builder.io/api/v1/image/assets/310084eb7fec4ac5a23258c209abbce1/abbb4bb1ca267ffddfa0ca950170a367eeaf5e19a28171ad170df309a8e51d40?placeholderIfAbsent=true"
+										alt="Marketplace category icon"
+										class="category-icon"
+									/>
+									<h2 class="category-title">Маркетплейсы</h2>
+									<p class="cashback-text">Кэшбэк до 5%</p>
+								</div>
+							</article>
+						</div>
+					</div>
+				</section>
+			</section>
+
+			<!-- Может быть полезно -->
+			<section class="helpful-resources">
+				<h2 class="section-title">Может быть полезно</h2>
+				<div class="resources-container">
+					<div class="resources-grid">
+						<article class="resource-card">
+							<img
+								src="https://cdn.builder.io/api/v1/image/assets/310084eb7fec4ac5a23258c209abbce1/027f75147e724fb892d898da798db306600e8c37dc3d9ac7301d97ca9eca1604?placeholderIfAbsent=true"
+								alt="Тарифы icon"
+								class="resource-icon"
+							/>
+							<h3 class="card-title">Тарифы</h3>
+							<p class="card-description">
+								Доставка, обслуживание, доход.<br />
+								Пополнения и переводы
+							</p>
+							<a href="#" class="card-link">Изучить</a>
+						</article>
+
+						<article class="resource-card">
+							<img
+								src="https://cdn.builder.io/api/v1/image/assets/310084eb7fec4ac5a23258c209abbce1/956885e9b32fc837be1dc6981eb41732a83707cd7e407d4007af9d005538be44?placeholderIfAbsent=true"
+								alt="Помощь icon"
+								class="resource-icon"
+							/>
+							<h3 class="card-title">Помощь</h3>
+							<p class="card-description">
+								Популярные вопросы. Советы<br />
+								о выгодном пользовании картой
+							</p>
+							<a href="#" class="card-link">Расплачиваться выгодно</a>
+						</article>
+					</div>
+				</div>
+			</section>
+
+			<!-- FAQ -->
+			<section class="faq-container">
+				<h1 class="faq-header">Ответы на частые вопросы</h1>
+				<div class="faq-content">
+					<div class="faq-card">
+						<details class="faq-item" name="faq">
+							<summary class="faq-question">
+								<h2 class="question-text">
+									Сколько стоит обслуживание дебетовой карты?
+								</h2>
+								<svg
+									class="chevron-icon"
+									width="24"
+									height="24"
+									viewBox="0 0 24 24"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										fill-rule="evenodd"
+										clip-rule="evenodd"
+										d="M4.29297 10.207L5.70697 8.79297L12 15.086L18.293 8.79297L19.707 10.207L12 17.914L4.29297 10.207Z"
+										fill="#001024"
+										fill-opacity="0.32"
+									></path>
+								</svg>
+							</summary>
+						</details>
+						<div class="accordion-content">
+							<div class="accordion-content-body">
+								Lorem, ipsum dolor sit amet consectetur adipisicing elit. A
+								aliquid iusto laudantium. Impedit praesentium, voluptatibus
+								obcaecati accusamus velit rerum, fugiat optio beatae
+								repellendus, architecto et? Voluptatibus a eum quam nostrum.
+							</div>
+						</div>
+
+						<details class="faq-item" name="faq">
+							<summary class="faq-question">
+								<h2 class="question-text">Как заказать карту «Мир»?</h2>
+								<svg
+									class="chevron-icon"
+									width="24"
+									height="24"
+									viewBox="0 0 24 24"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										fill-rule="evenodd"
+										clip-rule="evenodd"
+										d="M4.29297 10.207L5.70697 8.79297L12 15.086L18.293 8.79297L19.707 10.207L12 17.914L4.29297 10.207Z"
+										fill="#001024"
+										fill-opacity="0.32"
+									></path>
+								</svg>
+							</summary>
+						</details>
+						<div class="accordion-content">
+							<div class="accordion-content-body">
+								Lorem, ipsum dolor sit amet consectetur adipisicing elit. A
+								aliquid iusto laudantium. Impedit praesentium, voluptatibus
+								obcaecati accusamus velit rerum, fugiat optio beatae
+								repellendus, architecto et? Voluptatibus a eum quam nostrum.
+							</div>
+						</div>
+
+						<article class="faq-item">
+							<button class="faq-question">
+								<h2 class="question-text">
+									Как пользоваться счетом до получения карты?
+								</h2>
+								<svg
+									class="chevron-icon"
+									width="24"
+									height="24"
+									viewBox="0 0 24 24"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										fill-rule="evenodd"
+										clip-rule="evenodd"
+										d="M4.29297 10.207L5.70697 8.79297L12 15.086L18.293 8.79297L19.707 10.207L12 17.914L4.29297 10.207Z"
+										fill="#001024"
+										fill-opacity="0.32"
+									></path>
+								</svg>
+							</button>
+						</article>
+
+						<article class="faq-item">
+							<button class="faq-question">
+								<h2 class="question-text">Как работает кэшбэк по карте?</h2>
+								<svg
+									class="chevron-icon"
+									width="24"
+									height="24"
+									viewBox="0 0 24 24"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										fill-rule="evenodd"
+										clip-rule="evenodd"
+										d="M4.29297 10.207L5.70697 8.79297L12 15.086L18.293 8.79297L19.707 10.207L12 17.914L4.29297 10.207Z"
+										fill="#001024"
+										fill-opacity="0.32"
+									></path>
+								</svg>
+							</button>
+						</article>
+
+						<article class="faq-item">
+							<button class="faq-question">
+								<h2 class="question-text">Что такое подписка Pro?</h2>
+								<svg
+									class="chevron-icon"
+									width="24"
+									height="24"
+									viewBox="0 0 24 24"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										fill-rule="evenodd"
+										clip-rule="evenodd"
+										d="M4.29297 10.207L5.70697 8.79297L12 15.086L18.293 8.79297L19.707 10.207L12 17.914L4.29297 10.207Z"
+										fill="#001024"
+										fill-opacity="0.32"
+									></path>
+								</svg>
+							</button>
+						</article>
+
+						<article class="faq-item">
+							<button class="faq-question">
+								<h2 class="question-text">Как получать проценты от банка?</h2>
+								<svg
+									class="chevron-icon"
+									width="24"
+									height="24"
+									viewBox="0 0 24 24"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										fill-rule="evenodd"
+										clip-rule="evenodd"
+										d="M4.29297 10.207L5.70697 8.79297L12 15.086L18.293 8.79297L19.707 10.207L12 17.914L4.29297 10.207Z"
+										fill="#001024"
+										fill-opacity="0.32"
+									></path>
+								</svg>
+							</button>
+						</article>
+
+						<article class="faq-item">
+							<button class="faq-question">
+								<h2 class="question-text">
+									Как получать оповещения об операциях по карте?
+								</h2>
+								<svg
+									class="chevron-icon"
+									width="24"
+									height="24"
+									viewBox="0 0 24 24"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										fill-rule="evenodd"
+										clip-rule="evenodd"
+										d="M4.29297 10.207L5.70697 8.79297L12 15.086L18.293 8.79297L19.707 10.207L12 17.914L4.29297 10.207Z"
+										fill="#001024"
+										fill-opacity="0.32"
+									></path>
+								</svg>
+							</button>
+						</article>
+
+						<article class="faq-item">
+							<button class="faq-question">
+								<h2 class="question-text">
+									Как перевести деньги с карты W‑Банка на другую карту?
+								</h2>
+								<svg
+									class="chevron-icon"
+									width="24"
+									height="24"
+									viewBox="0 0 24 24"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										fill-rule="evenodd"
+										clip-rule="evenodd"
+										d="M4.29297 10.207L5.70697 8.79297L12 15.086L18.293 8.79297L19.707 10.207L12 17.914L4.29297 10.207Z"
+										fill="#001024"
+										fill-opacity="0.32"
+									></path>
+								</svg>
+							</button>
+						</article>
+
+						<article class="faq-item">
+							<button class="faq-question">
+								<h2 class="question-text">Что такое дополнительная карта?</h2>
+								<svg
+									class="chevron-icon"
+									width="24"
+									height="24"
+									viewBox="0 0 24 24"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										fill-rule="evenodd"
+										clip-rule="evenodd"
+										d="M4.29297 10.207L5.70697 8.79297L12 15.086L18.293 8.79297L19.707 10.207L12 17.914L4.29297 10.207Z"
+										fill="#001024"
+										fill-opacity="0.32"
+									></path>
+								</svg>
+							</button>
+						</article>
+
+						<article class="faq-item">
+							<button class="faq-question">
+								<h2 class="question-text">
+									Как получить бонусы за приглашение друга?
+								</h2>
+								<svg
+									class="chevron-icon"
+									width="24"
+									height="24"
+									viewBox="0 0 24 24"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										fill-rule="evenodd"
+										clip-rule="evenodd"
+										d="M4.29297 10.207L5.70697 8.79297L12 15.086L18.293 8.79297L19.707 10.207L12 17.914L4.29297 10.207Z"
+										fill="#001024"
+										fill-opacity="0.32"
+									></path>
+								</svg>
+							</button>
+						</article>
+					</div>
+				</div>
+			</section>
+
+			<!-- Футер -->
+			<footer class="footer-light">
+				<div class="footer-nav-section">
+					<div class="divider"></div>
+					<nav class="footer-nav-grid">
+						<section class="nav-group">
+							<h2 class="nav-title">Частным лицам</h2>
+							<h3 class="nav-subtitle">Банк</h3>
+							<ul class="nav-list">
+								<li><a href="#" class="nav-link">Кредитные карты</a></li>
+								<li><a href="#" class="nav-link">Дебетовые карты</a></li>
+								<li><a href="#" class="nav-link">Премиум</a></li>
+								<li><a href="#" class="nav-link">Кредит наличными</a></li>
+								<li><a href="#" class="nav-link">Рефинансирование</a></li>
+								<li><a href="#" class="nav-link">Автокредит</a></li>
+								<li><a href="#" class="nav-link">Вклады</a></li>
+								<li><a href="#" class="nav-link">Накопительный счет</a></li>
+								<li><a href="#" class="nav-link">Подписка Pro</a></li>
+								<li><a href="#" class="nav-link">Private</a></li>
+								<li><a href="#" class="nav-link">Долями</a></li>
+								<li><a href="#" class="nav-link">Ипотека</a></li>
+							</ul>
+						</section>
+
+						<section class="nav-group">
+							<h2 class="nav-title">Инвестиции</h2>
+							<ul class="nav-list">
+								<li><a href="#" class="nav-link">Брокерский счет</a></li>
+								<li><a href="#" class="nav-link">ИИС</a></li>
+								<li><a href="#" class="nav-link">Премиум</a></li>
+								<li><a href="#" class="nav-link">Акции</a></li>
+								<li><a href="#" class="nav-link">Валюты</a></li>
+								<li><a href="#" class="nav-link">Фонды</a></li>
+								<li><a href="#" class="nav-link">Облигации</a></li>
+								<li><a href="#" class="nav-link">Фьючерсы</a></li>
+								<li><a href="#" class="nav-link">Золотые слитки</a></li>
+								<li><a href="#" class="nav-link">Пульс</a></li>
+								<li><a href="#" class="nav-link">Стратегии</a></li>
+								<li>
+									<a href="#" class="nav-link"
+										>Портфельное<br />инвестирование</a
+									>
+								</li>
+								<li><a href="#" class="nav-link">Терминал</a></li>
+								<li>
+									<a href="#" class="nav-link">Маржинальная<br />торговля</a>
+								</li>
+								<li><a href="#" class="nav-link">Академия инвестиций</a></li>
+							</ul>
+						</section>
+
+						<section class="nav-group">
+							<h2 class="nav-title">Страхование</h2>
+							<ul class="nav-list">
+								<li><a href="#" class="nav-link">ОСАГО</a></li>
+								<li><a href="#" class="nav-link">Каско</a></li>
+								<li><a href="#" class="nav-link">Каско по подписке</a></li>
+								<li>
+									<a href="#" class="nav-link">Путешествия<br />за границу</a>
+								</li>
+								<li><a href="#" class="nav-link">Путешествия</a></li>
+								<li><a href="#" class="nav-link">Ипотека</a></li>
+								<li><a href="#" class="nav-link">Квартира</a></li>
+								<li><a href="#" class="nav-link">Здоровье</a></li>
+								<li><a href="#" class="nav-link">Блог Страхования</a></li>
+							</ul>
+
+							<h3 class="nav-subtitle">Путешествия</h3>
+							<ul class="nav-list">
+								<li><a href="#" class="nav-link">Авиабилеты</a></li>
+								<li><a href="#" class="nav-link">Отели</a></li>
+								<li><a href="#" class="nav-link">Туры</a></li>
+								<li><a href="#" class="nav-link">Ж/д билеты</a></li>
+							</ul>
+						</section>
+
+						<section class="nav-group">
+							<h2 class="nav-title">ИП и бизнесу</h2>
+							<h3 class="nav-subtitle">Малый бизнес</h3>
+							<ul class="nav-list">
+								<li><a href="#" class="nav-link">Расчетный счет</a></li>
+								<li><a href="#" class="nav-link">Бизнес-консультация</a></li>
+								<li><a href="#" class="nav-link">Регистрация ИП</a></li>
+								<li><a href="#" class="nav-link">Регистрация ООО</a></li>
+								<li><a href="#" class="nav-link">Эквайринг</a></li>
+								<li><a href="#" class="nav-link">Кредиты</a></li>
+								<li><a href="#" class="nav-link">Госзакупки</a></li>
+								<li><a href="#" class="nav-link">Продажи</a></li>
+								<li><a href="#" class="nav-link">Бухгалтерия</a></li>
+								<li><a href="#" class="nav-link">Бизнес-карта</a></li>
+								<li><a href="#" class="nav-link">Депозиты</a></li>
+								<li><a href="#" class="nav-link">Рассрочки</a></li>
+								<li><a href="#" class="nav-link">Проверка контрагентов</a></li>
+								<li><a href="#" class="nav-link">Бонусы для бизнеса</a></li>
+								<li><a href="#" class="nav-link">Топливо для бизнеса</a></li>
+								<li><a href="#" class="nav-link">Лизинг</a></li>
+							</ul>
+						</section>
+
+						<section class="nav-group">
+							<h2 class="nav-title">Средний и крупный<br />бизнес</h2>
+							<h3 class="nav-subtitle">Корпорациям</h3>
+							<ul class="nav-list">
+								<li><a href="#" class="nav-link">Расчетный счет</a></li>
+								<li><a href="#" class="nav-link">Сервисы для выплат</a></li>
+								<li><a href="#" class="nav-link">Торговый эквайринг</a></li>
+								<li><a href="#" class="nav-link">Кредиты</a></li>
+								<li><a href="#" class="nav-link">Депозиты</a></li>
+								<li><a href="#" class="nav-link">ВЭД</a></li>
+								<li><a href="#" class="nav-link">Госзакупки</a></li>
+								<li><a href="#" class="nav-link">Бизнес-решения</a></li>
+							</ul>
+						</section>
+					</nav>
+				</div>
+
+				<section class="footer-dark">
+					<div class="footer-content">
+						<div class="footer-top">
+							<nav class="footer-links">
+								<div class="links-group">
+									<ul class="links-list">
+										<li><a href="#" class="footer-link">О W-Банке</a></li>
+										<li><a href="#" class="footer-link">Новости</a></li>
+										<li><a href="#" class="footer-link">Блог</a></li>
+										<li><a href="#" class="footer-link">Работа</a></li>
+										<li>
+											<a href="#" class="footer-link">Точки пополнения</a>
+										</li>
+										<li><a href="#" class="footer-link">Банкоматы</a></li>
+										<li><a href="#" class="footer-link">Курсы валют</a></li>
+									</ul>
+									<ul class="links-list">
+										<li><a href="#" class="footer-link">Помощь</a></li>
+										<li><a href="#" class="footer-link">Безопасность</a></li>
+										<li><a href="#" class="footer-link">Для инвесторов</a></li>
+									</ul>
+								</div>
+								<a href="#" class="footer-link">Контакты</a>
+							</nav>
+
+							<div class="contact-info">
+								<p class="phone-number">8 800 333-33-33</p>
+								<p class="phone-label">Для звонков</p>
+							</div>
+						</div>
+
+						<div class="cookie-notice">
+							<p>
+								<a href="#" class="cookie-link">использует файлы «cookie»</a>, с
+								целью персонализации сервисов и повышения удобства пользования
+								веб-сайтом. «Cookie» представляют собой небольшие файлы,
+							</p>
+							<p>
+								содержащие информацию о предыдущих посещениях веб-сайта. Если вы
+								не хотите использовать файлы «cookie», измените настройки
+								браузера.
+							</p>
+						</div>
+
+						<div class="tech-notice">
+							<p>
+								На информационном ресурсе применяются
+								<a href="#" class="tech-link">рекомендательные технологии</a>.
+								При применении информационных технологий предоставления
+								информации осуществляется сбор,
+							</p>
+							<p>
+								систематизация и анализ сведений, относящихся к предпочтениям
+								пользователей сети «Интернет», находящихся на территории
+								Республики Казахстан
+							</p>
+						</div>
+
+						<p class="terms-notice">
+							Условия акции действительны при оформлении кредитной карты впервые
+							или при закрытии ранее заключенного договора на кредитку не
+							позднее 30.02.2025.
+						</p>
+
+						<nav class="legal-links">
+							<a href="#" class="legal-link"
+								>Центр раскрытия корпоративной информации</a
+							>
+							<a href="#" class="legal-link"
+								>Информация о процентных ставках по договорам банковского вклада
+								с физическими лицами</a
+							>
+							<a href="#" class="legal-link"
+								>Раскрытие информации профессиональным участником рынка ценных
+								бумаг</a
+							>
+							<a href="#" class="legal-link">Мониторинг работы W-Банка</a>
+							<a href="#" class="legal-link"
+								>Ограничения Дистанционного обслуживания</a
+							>
+							<a href="#" class="legal-link"
+								>Новости об изменении условий продуктов и сервисов Банка</a
+							>
+							<a href="#" class="legal-link">Удаленная идентификация</a>
+							<a href="#" class="legal-link">Карта сайта</a>
+							<a href="#" class="legal-link"
+								>Декларация соответствия условий труда государственным
+								нормативным требованиям охраны труда АО «WБанк»</a
+							>
+							<a href="#" class="legal-link"
+								>Информация о продолжительности операционного времени</a
+							>
+						</nav>
+
+						<nav class="additional-links">
+							<a href="#" class="additional-link">Автомобили Haval</a>
+							<a href="#" class="additional-link">Сообщить о коррупции</a>
+							<a href="#" class="additional-link">Комплаенс для партнеров</a>
+							<a href="#" class="additional-link">Акция Платинум</a>
+						</nav>
+
+						<div class="divider"></div>
+
+						<div class="footer-bottom">
+							<p class="copyright">© 2025, АО «WБанк», официальный сайт</p>
+							<img
+								src="https://cdn.builder.io/api/v1/image/assets/310084eb7fec4ac5a23258c209abbce1/2ef71f9224fbba86775f4339a0aca330263129097d9f81d6833a4c5cb9ae2fdc?placeholderIfAbsent=true"
+								alt="Bank Logo"
+								class="footer-logo"
+							/>
+						</div>
+					</div>
+				</section>
+			</footer>
+		</div>
+	</body>
+</html>

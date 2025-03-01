@@ -1,0 +1,879 @@
+* {
+	box-sizing: border-box;
+}
+/* Первая секция */
+.banner-container {
+	background-color: #f6f7f8;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.top-banner {
+	padding: 24px 0 8px;
+	background-color: #f6f7f8;
+	max-width: 1234px;
+	width: 100%;
+}
+
+.banner-content {
+	display: flex;
+	align-items: center;
+	height: 64px;
+	border-radius: 24px;
+	padding: 0 16px;
+	background-color: #9c0200;
+}
+
+.banner-icon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 24px;
+	height: 24px;
+	margin-right: 12px;
+}
+
+.banner-text {
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 20px;
+	flex-grow: 1;
+	margin: 0;
+}
+
+.banner-button {
+	padding: 8px 16px;
+	border-radius: 8px;
+	border: 1px solid rgba(0, 16, 36, 0.12);
+	background: transparent;
+	color: rgba(255, 255, 255, 0.8);
+	font-family: 'Roboto', sans-serif;
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 16px;
+	text-align: center;
+	cursor: pointer;
+}
+.banner-button:hover {
+	background: #fff;
+	color: #bf0603;
+}
+
+.main-content {
+	padding: 76px 0 28px;
+	text-align: center;
+	background-color: #f6f7f8;
+}
+
+.heading {
+	color: rgba(0, 0, 0, 0.8);
+	font-family: 'Roboto', sans-serif;
+	font-size: 43px;
+	font-weight: 700;
+	line-height: 48px;
+	margin: 0 0 28px;
+}
+
+.subheading {
+	color: rgba(0, 0, 0, 0.8);
+	font-family: 'Roboto', sans-serif;
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 24px;
+	max-width: 908px;
+	margin: 0 auto;
+}
+
+/* Кредитная крата Платинум */
+
+.navigation-menu {
+	background-color: #f6f7f8;
+	padding: 12px 70px;
+	display: flex;
+	justify-content: center;
+	font-size: 15px;
+	line-height: 1.6;
+}
+
+.nav-tabs {
+	display: flex;
+	max-width: 714px;
+	width: 100%;
+}
+
+.nav-tab {
+	padding: 16px;
+	border: 1px solid rgba(0, 16, 36, 0.12);
+	background: none;
+	font-family: inherit;
+	font-size: inherit;
+	cursor: pointer;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.nav-tab:hover {
+	border: 1px solid #bf06038f;
+}
+
+.nav-tab:first-child {
+	border-radius: 12px 0 0 12px;
+	border: 2px solid #bf0603;
+}
+
+.nav-tab:last-child {
+	border-radius: 0 12px 12px 0;
+}
+
+.product-banner {
+	background-color: #f6f7f8;
+	padding: 24px 70px;
+	display: flex;
+	justify-content: center;
+}
+
+.product-card {
+	background-color: #fff;
+	border-radius: 24px;
+	padding-left: 32px;
+	max-width: 1234px;
+	width: 100%;
+	overflow: hidden;
+}
+
+.content-wrapper {
+	display: flex;
+	gap: 20px;
+	align-items: center;
+}
+
+.product-info {
+	width: 57%;
+	padding: 40px 0;
+}
+
+.product-tag {
+	display: flex;
+	align-items: center;
+	gap: 4px;
+	background-color: rgba(36, 74, 127, 0.06);
+	border-radius: 100px;
+	padding: 8px;
+	font-size: 15px;
+}
+
+.tag-icon {
+	width: 16px;
+	height: 16px;
+	border-radius: 5px;
+}
+
+.product-title {
+	font-size: 22px;
+	font-weight: 500;
+	line-height: 1;
+	margin-top: 46px;
+	color: #000;
+}
+
+.product-description {
+	font-size: 15px;
+	line-height: 24px;
+	margin-top: 19px;
+	color: #000;
+}
+
+.features-grid {
+	display: flex;
+	gap: 75px;
+	margin-top: 52px;
+	flex-wrap: wrap;
+}
+
+.feature-item {
+	flex: 1;
+}
+
+.feature-value {
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 1.3;
+	margin: 0;
+	color: #000;
+}
+
+.feature-label {
+	font-size: 13px;
+	line-height: 2;
+	margin-top: 12px;
+	color: #000;
+}
+
+.action-buttons {
+	display: flex;
+	gap: 20px;
+	margin-top: 63px;
+	font-size: 15px;
+}
+
+.primary-button {
+	background-color: #bf0603;
+	color: #fff;
+	border: 1px solid #bf0603;
+	border-radius: 8px;
+	padding: 15px 18px;
+	cursor: pointer;
+	font-family: inherit;
+	font-size: inherit;
+}
+.primary-button:hover {
+	color: #bf0603;
+	background-color: #fff;
+}
+
+.secondary-button {
+	background: none;
+	border: none;
+	color: #126df7;
+	cursor: pointer;
+	font-family: inherit;
+	font-size: inherit;
+	padding: 15px 0;
+}
+
+.product-image {
+	max-width: 43%;
+	height: 100%;
+	display: flex;
+}
+
+.card-preview {
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+}
+/* Оформите кредитную карту */
+.steps-process {
+	width: 100%;
+	background-color: #fff;
+}
+
+.steps-process__header {
+	background-color: #f6f7f8;
+	padding: 76px 0 24px;
+	display: flex;
+	justify-content: center;
+}
+
+.steps-process__title {
+	color: rgba(0, 0, 0, 0.8);
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	font-size: 43px;
+	font-weight: 700;
+	line-height: 48px;
+	max-width: 578px;
+	width: 100%;
+	margin: 0;
+}
+
+.steps-process__content {
+	display: flex;
+	justify-content: center;
+	gap: 48px;
+	padding: 52px 0;
+	background-color: #f6f7f8;
+}
+
+.step-card {
+	width: 336px;
+	padding: 60px 32px 36px;
+	border-radius: 24px;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	background-color: #fff;
+}
+
+.step-card__number {
+	position: absolute;
+	top: -28px;
+	width: 56px;
+	height: 56px;
+	border-radius: 17.5px;
+	background-color: #333;
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+	font-size: 24px;
+	font-weight: 500;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.step-card__description {
+	color: rgba(0, 0, 0, 0.8);
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 24px;
+	max-width: 271px;
+	margin: 0;
+}
+
+/* Форма */
+.form-section {
+	display: flex;
+	justify-content: center;
+	padding: 16px;
+	background-color: #f6f7f8;
+}
+
+.form-content {
+	display: flex;
+	justify-content: space-between;
+	width: 1234px;
+	padding: 64px 140px 52px;
+	border-radius: 24px;
+	box-shadow: 0px 12px 12px 0px rgba(0, 0, 0, 0.21), 0px 5px 0px 0px #333 inset;
+	background-color: #fff;
+}
+
+.left-section {
+	width: 536px;
+	margin-right: 40px;
+}
+
+.form-heading {
+	font-family: Roboto, sans-serif;
+	font-size: 22px;
+	font-weight: 500;
+	color: rgba(0, 0, 0, 0.8);
+	margin-bottom: 19px;
+}
+
+.form-subheading {
+	font-family: Roboto, sans-serif;
+	font-size: 15px;
+	color: rgba(0, 0, 0, 0.8);
+	margin-bottom: 20px;
+}
+
+.card-designs {
+	display: grid;
+	grid-template-columns: repeat(4, 125px);
+	gap: 12px;
+	margin-bottom: 20px;
+}
+
+.card-option {
+	width: 125px;
+	height: 80px;
+	border-radius: 6px;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+
+.card-option.selected {
+	outline: 2px solid #bf0603;
+}
+
+.card-image {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.credit-limit-section {
+	border-radius: 4px;
+	padding: 25px;
+	margin-bottom: 20px;
+	background-color: rgba(36, 74, 127, 0.06);
+}
+
+.limit-label {
+	font-family: Roboto, sans-serif;
+	font-size: 13px;
+	color: rgba(0, 0, 0, 0.54);
+	margin-bottom: 12px;
+}
+
+.limit-amount {
+	font-family: Roboto, sans-serif;
+	font-size: 18px;
+	color: rgba(0, 0, 0, 0.8);
+	display: flex;
+	align-items: center;
+}
+
+.edit-icon {
+	margin-left: 10px;
+	background: none;
+	border: none;
+	padding: 0;
+	cursor: pointer;
+}
+
+.slider-container {
+	margin-top: 20px;
+}
+
+.slider-track {
+	width: 100%;
+	height: 2px;
+	position: relative;
+	margin-bottom: 20px;
+	background-color: rgba(36, 74, 127, 0.09);
+}
+
+.slider-fill {
+	width: 23.5%;
+	height: 100%;
+	background-color: #bf0603;
+}
+
+.slider-handle {
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	position: absolute;
+	top: -5px;
+	left: 23.5%;
+	background-color: #bf0603;
+	cursor: pointer;
+}
+
+.slider-labels {
+	display: flex;
+	justify-content: space-between;
+	font-family: Roboto, sans-serif;
+	font-size: 12px;
+	color: rgba(0, 0, 0, 0.4);
+}
+
+.dropdown-section {
+	margin-bottom: 20px;
+}
+
+.dropdown-container {
+	width: 100%;
+	border: none;
+	border-radius: 12px;
+	padding: 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: rgba(36, 74, 127, 0.06);
+	cursor: pointer;
+}
+
+.dropdown-label {
+	font-family: Roboto, sans-serif;
+	font-size: 15px;
+	color: rgba(0, 0, 0, 0.54);
+}
+
+.phone-section {
+	margin-bottom: 20px;
+}
+
+.section-heading {
+	font-family: Roboto, sans-serif;
+	font-size: 22px;
+	color: rgba(0, 0, 0, 0.8);
+	margin-bottom: 19px;
+}
+
+.phone-input {
+	width: 100%;
+	font-family: Roboto, sans-serif;
+	font-size: 15px;
+	color: rgba(0, 0, 0, 0.54);
+	border: none;
+	border-radius: 12px;
+	padding: 10px;
+	background-color: rgba(36, 74, 127, 0.06);
+}
+
+.terms-section {
+	margin-top: 27px;
+	font-family: Roboto, sans-serif;
+	font-size: 13px;
+	color: rgba(0, 0, 0, 0.4);
+}
+
+.terms-text {
+	margin-bottom: 5px;
+}
+
+.link {
+	color: #126df7;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.terms-text-2 {
+	color: #126df7;
+	cursor: pointer;
+	margin-bottom: 5px;
+}
+
+.next-button {
+	width: 84px;
+	height: 56px;
+	border: 1px solid #bf0603;
+	border-radius: 12px;
+	color: #fff;
+	font-family: Roboto, sans-serif;
+	font-size: 15px;
+	margin-left: auto;
+	margin-top: 20px;
+	cursor: pointer;
+	background-color: #bf0603;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.next-button:hover {
+	color: #bf0603;
+	background-color: #fff;
+}
+
+.right-section {
+	width: 248px;
+}
+
+.selected-card-info {
+	margin-bottom: 20px;
+}
+
+.info-label {
+	font-family: Roboto, sans-serif;
+	font-size: 13px;
+	color: rgba(0, 0, 0, 0.54);
+	margin-bottom: 8px;
+}
+
+.info-amount {
+	font-family: Roboto, sans-serif;
+	font-size: 22px;
+	color: rgba(0, 0, 0, 0.8);
+	margin: 0;
+}
+
+.form-card-preview {
+	border-radius: 12px;
+	padding: 20px;
+	margin-bottom: 20px;
+	background-color: #f6f7f8;
+}
+
+.preview-image {
+	width: 100%;
+	height: auto;
+	margin-bottom: 20px;
+}
+
+.card-type {
+	font-family: Roboto, sans-serif;
+	font-size: 15px;
+	color: rgba(0, 0, 0, 0.8);
+	font-weight: 500;
+	margin: 0;
+}
+
+.approval-section {
+	margin-top: 20px;
+}
+
+.approval-label {
+	font-family: Roboto, sans-serif;
+	font-size: 13px;
+	color: rgba(0, 0, 0, 0.54);
+	margin-bottom: 8px;
+}
+
+.approval-percentage {
+	font-family: Roboto, sans-serif;
+	font-size: 23px;
+	color: rgba(0, 0, 0, 0.8);
+	margin-bottom: 8px;
+}
+
+.progress-bar {
+	width: 100%;
+	height: 8px;
+	border-radius: 4px;
+	overflow: hidden;
+	background-color: #f6f7f8;
+}
+
+.progress-fill {
+	width: 5%;
+	height: 100%;
+	background-color: #00b92d;
+	transition: width 0.3s ease;
+}
+
+.progress-text {
+	font-family: Roboto, sans-serif;
+	font-size: 13px;
+	color: rgba(0, 0, 0, 0.54);
+	margin-top: 8px;
+}
+
+/* Выбор карты */
+.promo-section {
+	display: flex;
+	padding-top: 16px;
+	flex-direction: column;
+}
+
+.promo-background {
+	background-color: #f6f7f8;
+	display: flex;
+	width: 1920px;
+	max-width: 100%;
+	padding-bottom: 51px;
+	flex-direction: column;
+}
+
+.promo-banner {
+	background-color: #f6f7f8;
+	display: flex;
+	max-width: 100%;
+	padding: 24px 70px;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.card-container {
+	border-radius: 24px;
+	background-color: #fff;
+	width: 1234px;
+	max-width: 100%;
+	padding-left: 32px;
+	overflow: hidden;
+}
+
+.content-wrapper {
+	gap: 20px;
+	display: flex;
+}
+
+.content-column {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	line-height: normal;
+	width: 57%;
+}
+
+.card-content {
+	display: flex;
+	margin: auto 0;
+	width: 100%;
+	flex-direction: column;
+	align-self: stretch;
+	align-items: start;
+	font-family: Roboto, -apple-system, Roboto, Helvetica, sans-serif;
+	padding: 32px 0;
+}
+
+.category-tag {
+	border-radius: 100px;
+	background-color: rgba(36, 74, 127, 0.06);
+	display: flex;
+	padding: 8px;
+	align-items: center;
+	gap: 4px;
+	overflow: hidden;
+	font-size: 15px;
+	color: #000;
+	font-weight: 400;
+	line-height: 1;
+}
+
+.category-icon {
+	aspect-ratio: 1;
+	object-fit: contain;
+	object-position: center;
+	width: 16px;
+	border-radius: 5px;
+	flex-shrink: 0;
+}
+
+.card-title {
+	color: #000;
+	font-size: 22px;
+	font-weight: 500;
+	line-height: 1;
+	margin-top: 45px;
+}
+
+.card-description {
+	color: #000;
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 24px;
+	align-self: stretch;
+	margin-top: 19px;
+}
+
+.features-grid {
+	align-self: stretch;
+	display: flex;
+	margin-top: 51px;
+	align-items: start;
+	gap: 20px;
+	color: #000;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.feature-item {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+}
+
+.feature-value {
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 1.3;
+}
+
+.feature-label {
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 2;
+	margin-top: 12px;
+}
+
+.cta-container {
+	display: flex;
+	margin-top: 58px;
+	width: 275px;
+	max-width: 100%;
+	align-items: stretch;
+	gap: 20px;
+	font-size: 15px;
+	font-weight: 400;
+	text-align: center;
+	line-height: 1;
+	justify-content: space-between;
+}
+
+.primary-button {
+	border-radius: 8px;
+	background-color: #bf0603;
+	padding: 15px 18px;
+	color: #fff;
+	text-decoration: none;
+}
+
+.secondary-button {
+	color: #126df7;
+	margin: auto 0;
+	text-decoration: none;
+}
+
+.image-column {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	line-height: normal;
+	width: 43%;
+	margin-left: 20px;
+	height: 100%;
+}
+
+.promo-card-image {
+	object-fit: contain;
+	object-position: center;
+	width: 100%;
+	flex-grow: 1;
+}
+
+/* FAQ */
+.faq-container {
+	width: 100%;
+	padding: 76px 0 24px;
+	background-color: #f6f7f8;
+}
+
+.faq-header {
+	color: rgba(0, 0, 0, 0.8);
+	font-family: 'Roboto', sans-serif;
+	font-size: 42px;
+	font-weight: 700;
+	line-height: 48px;
+	text-align: center;
+	margin-bottom: 24px;
+}
+
+.faq-content {
+	display: flex;
+	justify-content: center;
+	padding: 24px 0;
+}
+
+.faq-card {
+	width: 1234px;
+	padding: 8px 24px;
+	border-radius: 24px;
+	background-color: #fff;
+}
+
+.faq-item {
+	border-bottom: 1px solid #dddfe0;
+	padding: 12px 0 11px;
+}
+
+.faq-question {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 2px 0;
+	width: 100%;
+	background: none;
+	border: none;
+	cursor: pointer;
+}
+
+.question-text {
+	color: rgba(0, 0, 0, 0.8);
+	font-family: 'Roboto', sans-serif;
+	font-size: 22px;
+	font-weight: 400;
+	line-height: 28px;
+	text-align: left;
+	margin: 0;
+}
+
+.chevron-icon {
+	flex-shrink: 0;
+	width: 24px;
+	height: 24px;
+}
+.faq-item[open] .chevron-icon {
+	rotate: 180deg;
+}
+
+.accordion-content {
+	display: grid;
+	grid-template-rows: 0fr;
+}
+.accordion-content-body {
+	overflow: hidden;
+}
+.faq-item[open] + .accordion-content {
+	grid-template-rows: 1fr;
+}

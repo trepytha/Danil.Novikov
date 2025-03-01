@@ -214,7 +214,7 @@
 	width: 1234px;
 	max-width: 100%;
 	overflow: hidden;
-	background-image: url(https://cdn.builder.io/api/v1/image/assets/310084eb7fec4ac5a23258c209abbce1/b7d8fbb8812342b0fff979472366bf0fb8470a47005285b90e5ed8fcaa185c73?placeholderIfAbsent=true);
+	background-image: url(../img/2/cardholder.png);
 	background-size: contain;
 	background-position: 100% 50%;
 	background-repeat: no-repeat;
@@ -258,6 +258,10 @@
 	line-height: 1;
 	margin-top: 76px;
 	cursor: pointer;
+}
+.banner-button:hover {
+	background-color: #bf0603;
+	color: #fff;
 }
 
 .banner-images {
@@ -716,12 +720,16 @@
 	font-family: Roboto, sans-serif;
 	font-size: 15px;
 	line-height: 20px;
-	border: none;
+	border: 1px solid #bf0603;
 	cursor: pointer;
 	position: absolute;
 	right: 68px;
 	bottom: 68px;
 	background-color: #bf0603;
+}
+.submit-button:hover {
+	background-color: #fff;
+	color: #bf0603;
 }
 
 /* Покупайте как обычно */

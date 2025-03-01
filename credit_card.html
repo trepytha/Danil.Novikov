@@ -9,8 +9,8 @@
 		/>
 		<link rel="stylesheet" href="css/footer.css" />
 		<link rel="stylesheet" href="css/header.css" />
-		<link rel="stylesheet" href="css/debit-card.css" />
-		<title>Дебетовая карта W-Bank</title>
+		<link rel="stylesheet" href="css/credit_card.css" />
+		<title>Кредитные карты W-Bank</title>
 	</head>
 	<body>
 		<div class="app">
@@ -100,418 +100,463 @@
 			</header>
 
 			<!-- Первая секция -->
-			<nav class="navigation">
-				<div class="breadcrumb">
-					<span class="breadcrumb-item">Дебетовые карты</span>
-					<div class="chevron-button" aria-label="Navigate">
-						<svg
-							width="17"
-							height="16"
-							viewBox="0 0 17 16"
-							fill="none"
-							xmlns="http://www.w3.org/2000/svg"
-							class="chevron"
-						>
-							<path
-								d="M8.28716 12.707C8.19491 12.8025 8.08457 12.8787 7.96256 12.9311C7.84056 12.9835 7.70934 13.0111 7.57656 13.0122C7.44378 13.0134 7.3121 12.9881 7.18921 12.9378C7.06631 12.8875 6.95466 12.8133 6.86076 12.7194C6.76687 12.6255 6.69262 12.5138 6.64234 12.3909C6.59206 12.268 6.56676 12.1364 6.56791 12.0036C6.56906 11.8708 6.59665 11.7396 6.64906 11.6176C6.70147 11.4956 6.77765 11.3852 6.87316 11.293L10.1662 7.99998L6.87316 4.70698C6.691 4.51838 6.59021 4.26578 6.59249 4.00358C6.59476 3.74138 6.69993 3.49057 6.88534 3.30516C7.07075 3.11975 7.32156 3.01458 7.58376 3.01231C7.84595 3.01003 8.09856 3.11082 8.28716 3.29298L11.5802 6.58598C11.9551 6.96104 12.1657 7.46965 12.1657 7.99998C12.1657 8.53031 11.9551 9.03892 11.5802 9.41398L8.28716 12.707Z"
-								fill="black"
-								fill-opacity="0.54"
-							></path>
-						</svg>
+			<section class="banner-container">
+				<div class="top-banner">
+					<div class="banner-content">
+						<div class="banner-icon">
+							<svg
+								width="24"
+								height="24"
+								viewBox="0 0 24 24"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+								class="bank-icon"
+							>
+								<mask
+									id="mask0_11_169"
+									style="mask-type: alpha"
+									maskUnits="userSpaceOnUse"
+									x="2"
+									y="2"
+									width="20"
+									height="20"
+								>
+									<path d="M2 7V11H22V7H2Z" fill="black"></path>
+									<path
+										opacity="0.7"
+										fill-rule="evenodd"
+										clip-rule="evenodd"
+										d="M7.09091 2H6V4C6 5.65685 7.34315 7 9 7H12H15C16.6569 7 18 5.65685 18 4V2H15C13.3431 2 12 3.34315 12 5C12 3.34315 10.6569 2 9 2H7.09091Z"
+										fill="black"
+									></path>
+									<path
+										opacity="0.8"
+										fill-rule="evenodd"
+										clip-rule="evenodd"
+										d="M10 11H3V22H10V11ZM14 11V19C14 20.6569 12.6569 22 11 22H17C19.2091 22 21 20.2091 21 18V11H14Z"
+										fill="black"
+									></path>
+									<path
+										opacity="0.3"
+										d="M14 11H10V22H11C12.6569 22 14 20.6569 14 19V11Z"
+										fill="black"
+									></path>
+								</mask>
+								<g mask="url(#mask0_11_169)">
+									<path d="M0 0H24V24H0V0Z" fill="white"></path>
+								</g>
+							</svg>
+						</div>
+						<p class="banner-text">
+							Кредитка «Платинум» из лимитированной серии с бесплатным
+							обслуживание навсегда — при оформлении до 9 марта
+						</p>
+						<a href="#form-section">
+							<button class="banner-button">Оформить карту</button>
+						</a>
 					</div>
-					<span class="breadcrumb-item">Black</span>
+				</div>
+				<div class="main-content">
+					<h1 class="heading">Кредитные карты</h1>
+					<p class="subheading">
+						Кредитные карты — это платежные карты, позволяющие оплачивать
+						покупки за счет средств банка. Расплачивайтесь кредиткой и получайте
+						кэшбэк бонусами за любые покупки
+					</p>
+				</div>
+			</section>
+
+			<!-- Кредитная крата Платинум -->
+			<nav class="navigation-menu">
+				<div class="nav-tabs">
+					<button class="nav-tab nav-tab-active">Все карты</button>
+					<button class="nav-tab">Премиальные</button>
+					<button class="nav-tab">Путешественнику</button>
+					<button class="nav-tab">Автомобилисту</button>
+					<button class="nav-tab">Геймеру</button>
+					<button class="nav-tab">Покупки</button>
 				</div>
 			</nav>
 
-			<section class="content">
-				<div class="hero">
-					<h1 class="hero-title">
-						Дебетовая карта Black c кэшбэком рублями на всё
-					</h1>
-					<p class="hero-description">
-						Зарабатывайте кэшбэк рублями, а не бонусами. Оплачивайте счета и
-						переводите деньги без комиссии. Закажите дебетовую карту с платежной
-						системой «Мир»
-					</p>
-					<a class="cta-container" href="not_found.html">
-						<button class="primary-btn">Оформить карту</button>
-					</a>
-				</div>
-
-				<figure class="card-showcase">
-					<img
-						src="img/2/main-bg.png"
-						alt="Black debit card with features"
-						class="card-image"
-					/>
-				</figure>
-			</section>
-
-			<!-- Картхолдер -->
-			<section class="promo-section">
-				<section class="features-section">
-					<div class="features-container">
-						<div class="features-grid">
-							<article class="feature-card">
-								<div class="feature-content">
-									<img
-										src="img/2/crown.svg"
-										alt="Cashback icon"
-										class="feature-icon"
-									/>
-									<h2 class="feature-title">Кэшбэк рублями до 30%</h2>
-									<p class="feature-description">
-										За покупки по спецпредложениям<br />
-										партнеров банка
-									</p>
-								</div>
-							</article>
-
-							<article class="feature-card">
-								<div class="feature-content">
-									<img
-										src="img/2/card.svg"
-										alt="Service fee icon"
-										class="feature-icon"
-									/>
-									<h2 class="feature-title">0 ₸ за обслуживание</h2>
-									<p class="feature-description">
-										Если хранить от 50 000 ₸ на карте,<br />
-										вкладах, накопительных счетах<br />
-										и в инвестициях. Иначе — 199 ₸<br />
-										в месяц
-									</p>
-								</div>
-							</article>
-
-							<article class="feature-card feature-card-dark">
-								<div class="feature-content">
-									<img
-										src="img/2/transfer.svg"
-										alt="Payments icon"
-										class="feature-icon"
-									/>
-									<h2 class="feature-title">
-										Платежи и переводы<br />без комиссии
-									</h2>
-									<div class="transfer-info">
-										<span class="highlight">Переводы</span>
-										на карты других банков, штрафов связи — без комиссии с
-										картой W‑Банка
-									</div>
-								</div>
-							</article>
-						</div>
-					</div>
-				</section>
-
-				<section class="promo-banner">
-					<div class="banner-container">
-						<div class="banner-content">
-							<div class="banner-text">
-								<h2 class="banner-title">
-									Дарим картхолдер<br />
-									при оформлении карты
-								</h2>
-								<p class="banner-description">
-									Удобно хранить банковские карты и приятные мелочи
-								</p>
-								<a href="not_found.html"
-									><button class="banner-button">Оформить карту</button></a
+			<section class="product-banner">
+				<article class="product-card">
+					<div class="content-wrapper">
+						<div class="product-info">
+							<div class="product-tag">
+								<img src="img/3/cart.svg" alt="Product icon" class="tag-icon" />
+								<span class="tag-text"
+									>Выберите карту с лимитированным дизайном</span
 								>
 							</div>
+
+							<h1 class="product-title">Кредитная карта «Платинум»</h1>
+
+							<p class="product-description">
+								Наша лучшая кредитная карта в редком дизайне. Решение за 2
+								минуты, доставим
+								<br />бесплатно
+							</p>
+
+							<div class="features-grid">
+								<div class="feature-item">
+									<h2 class="feature-value">До 1 000 000 ₸</h2>
+									<p class="feature-label">Кредитный лимит</p>
+								</div>
+
+								<div class="feature-item">
+									<h2 class="feature-value">До 55 дней</h2>
+									<p class="feature-label">Беспроцентный период</p>
+								</div>
+
+								<div class="feature-item">
+									<h2 class="feature-value">0 ₸</h2>
+									<p class="feature-label">За обслуживание карты</p>
+								</div>
+							</div>
+
+							<div class="action-buttons">
+								<a href="#form-section"
+									><button class="primary-button">Оформить карту</button></a
+								>
+								<button class="secondary-button">Подробнее</button>
+							</div>
+						</div>
+
+						<div class="product-image">
+							<img
+								src="img/3/fish.png"
+								alt="Credit card preview"
+								class="card-preview"
+							/>
 						</div>
 					</div>
-				</section>
+				</article>
 			</section>
 
-			<!-- Получите Black -->
+			<!-- Оформите кредитную карту -->
 			<section class="steps-process">
 				<div class="steps-process__header">
-					<h1 class="steps-process__title">Получите Black уже сегодня</h1>
+					<h2 class="steps-process__title">
+						Оформите кредитную карту за 5 минут
+					</h2>
 				</div>
 
 				<div class="steps-process__content">
 					<article class="step-card">
 						<span class="step-card__number">1</span>
 						<p class="step-card__description">
-							Заполните онлайн-заявку — посещать банк не нужно
+							Выберите карту с одним из полотен Эрмитажа
 						</p>
 					</article>
 
 					<article class="step-card">
 						<span class="step-card__number">2</span>
 						<p class="step-card__description">
-							Пользуйтесь банком в личном кабинете
+							Заполните заявку онлайн, узнайте решение банка сразу
 						</p>
 					</article>
 
 					<article class="step-card">
 						<span class="step-card__number">3</span>
 						<p class="step-card__description">
-							Пополняйте карту в личном кабинете с карт других банков без
-							комиссии
+							Бесплатно доставим карту с выбранным дизайном
 						</p>
 					</article>
 				</div>
 			</section>
 
 			<!-- Форма -->
-			<section class="container">
-				<div class="left-panel">
-					<h2 class="card-title">Дебетовая карта Black</h2>
-					<article class="card-preview">
-						<img
-							src="img/2/black.png"
-							alt="Card preview"
-							class="debit-card-image"
-						/>
-					</article>
-					<div class="cashback-info">
-						<div class="cashback-icon">₸</div>
-						<div class="cashback-text">
-							<h2 class="cashback-title">Кэшбэк до 3000 ₸ в месяц</h2>
-							<p class="cashback-subtitle">
-								С подпиской Pro лимит кэшбэка — 5000 ₸
+			<section class="form-section" id="form-section">
+				<article class="form-content">
+					<div class="left-section">
+						<div>
+							<h1 class="form-heading">Настройте свою карту</h1>
+							<p class="form-subheading">
+								Выберите дизайн и укажите свои данные
 							</p>
 						</div>
-					</div>
-				</div>
 
-				<div class="right-panel">
-					<ddiv class="progress-section">
-						<p class="progress-text">Уже заполнено</p>
-						<p class="progress-percentage">5%</p>
-						<div class="progress-bar">
-							<div class="progress-bar-bg"></div>
-							<div class="progress-bar-fill"></div>
-						</div>
-					</ddiv>
-
-					<div class="card-design-section">
-						<h3 class="section-title">Выберите дизайн карты</h3>
 						<div class="card-designs">
-							<button class="card-design active">
+							<article class="card-option selected">
 								<img
-									src="img/2/card1.png"
+									src="img/3/card1.png"
 									alt="Card design 1"
-									class="design-image"
+									class="card-image"
 								/>
-							</button>
-							<button class="card-design">
+							</article>
+							<article class="card-option">
 								<img
-									src="img/2/card2.png"
+									src="img/3/card2.png"
 									alt="Card design 2"
-									class="design-image"
+									class="card-image"
 								/>
-							</button>
-							<button class="card-design">
+							</article>
+							<article class="card-option">
 								<img
-									src="img/2/card3.png"
+									src="img/3/card3.png"
 									alt="Card design 3"
-									class="design-image"
+									class="card-image"
 								/>
-							</button>
-							<button class="card-design">
+							</article>
+							<article class="card-option">
 								<img
-									src="img/2/card4.png"
+									src="img/3/card4.png"
 									alt="Card design 4"
-									class="design-image"
+									class="card-image"
 								/>
-							</button>
-							<button class="card-design">
+							</article>
+							<article class="card-option">
 								<img
-									src="img/2/card5.png"
+									src="img/3/card5.png"
 									alt="Card design 5"
-									class="design-image"
+									class="card-image"
 								/>
-							</button>
-							<button class="card-design">
+							</article>
+							<article class="card-option">
 								<img
-									src="img/2/card6.png"
+									src="img/3/card6.png"
 									alt="Card design 6"
-									class="design-image"
+									class="card-image"
 								/>
-							</button>
+							</article>
+							<article class="card-option">
+								<img
+									src="img/3/card7.png"
+									alt="Card design 7"
+									class="card-image"
+								/>
+							</article>
 						</div>
 
-						<form class="form-section">
-							<div class="form-field category-select">
-								<label class="field-text"
-									>Выберите повышенный кэшбэк (четыре категории)</label
-								>
-								<button class="dropdown-icon">
+						<div class="credit-limit-section">
+							<label class="limit-label">Желаемый кредитный лимит</label>
+							<div class="limit-amount">
+								<span>70 000 ₸</span>
+								<button class="edit-icon" aria-label="Edit limit">
 									<svg
-										width="16"
+										width="17"
 										height="17"
-										viewBox="0 0 16 17"
+										viewBox="0 0 17 17"
 										fill="none"
 										xmlns="http://www.w3.org/2000/svg"
 									>
 										<path
 											fill-rule="evenodd"
 											clip-rule="evenodd"
-											d="M8 12.5639L2 6.72188L3.423 5.37988L8 9.87988L12.577 5.37988L14 6.72188L8 12.5639Z"
-											fill="black"
-											fill-opacity="0.4"
-										></path>
+											d="M3.664 3.45996H7.664V1.45996H1.664V15.46H15.664V9.45996H13.664V13.46H3.664V3.45996ZM6.634 8.63696L13.514 1.47296L14.312 2.27296C14.5898 2.55046 14.7477 2.92583 14.7518 3.31847C14.7559 3.7111 14.6059 4.0897 14.334 4.37296L8.474 10.476H6.635V8.63596L6.634 8.63696Z"
+											fill="#001024"
+											fill-opacity="0.22"
+										/>
 									</svg>
 								</button>
 							</div>
-
-							<div class="form-field">
-								<label class="field-text">Фамилия, имя и отчество*</label>
-								<span class="bonus-tag">+20%</span>
-							</div>
-
-							<div class="form-row">
-								<div class="form-field half">
-									<label>Мобильный телефон*</label>
-								</div>
-								<div class="form-field half">
-									<label>Электронная почта</label>
-								</div>
-							</div>
-
-							<div class="form-field">
-								<label>Дата рождения*</label>
-							</div>
-
-							<fieldset class="citizenship-section">
-								<legend class="citizenship-title">
-									Гражданство Казахстана?
-								</legend>
-								<div class="radio-group">
-									<label class="radio-option selected">
-										<span class="radio-text">Да</span>
-										<div class="radio-button">
-											<div class="radio-dot"></div>
-										</div>
-									</label>
-									<label class="radio-option">
-										<span class="radio-text">Нет</span>
-										<div class="radio-button empty"></div>
-									</label>
-								</div>
-							</fieldset>
-
-							<hr class="form-divider" />
-
-							<div class="terms-section">
-								<p class="terms-text">
-									Заполняя форму, я принимаю
-									<a href="not_found.html" class="link">условия передачи</a>
-								</p>
-								<p class="terms-text">
-									<a href="not_found.html" class="link"
-										>информации и использования карты до встречи</a
-									>
-									и даю
-								</p>
-								<p class="terms-text">
-									<a href="not_found.html" class="link"
-										>согласие на получение информации о продуктах<br />и услугах
-										Банка и партнеров</a
-									>
-								</p>
-								<button type="submit" class="submit-button">Оформить</button>
-							</div>
-						</form>
-					</div>
-				</div>
-			</section>
-
-			<!-- Покупайте как обычно -->
-			<section class="cashback-wrapper">
-				<section class="hero-section">
-					<div class="hero-content">
-						<h1 class="hero-title">
-							Покупайте как обычно.<br />
-							Получайте выгодный кэшбэк в бонусах
-						</h1>
-						<p class="hero-description">
-							До 30% кэшбэк рублями у партнеров банка. До 15% — в любимых
-							категориях
-						</p>
-					</div>
-				</section>
-
-				<section class="benefits-section">
-					<div class="benefits-container">
-						<div class="benefits-grid">
-							<article class="category-card">
-								<div class="card-content">
-									<img
-										src="img/2/shop.png"
-										alt="Products category icon"
-										class="category-icon"
-									/>
-									<h2 class="category-title">Продукты</h2>
-									<p class="cashback-text">Кэшбэк до 10%</p>
-								</div>
-							</article>
-
-							<article class="category-card">
-								<div class="card-content">
-									<img
-										src="img/2/eshop.png"
-										alt="Electronics category icon"
-										class="category-icon"
-									/>
-									<h2 class="category-title">Электроника</h2>
-									<p class="cashback-text">Кэшбэк до 15%</p>
-								</div>
-							</article>
-
-							<article class="category-card">
-								<div class="card-content">
-									<img
-										src="img/2/market.png"
-										alt="Marketplace category icon"
-										class="category-icon"
-									/>
-									<h2 class="category-title">Маркетплейсы</h2>
-									<p class="cashback-text">Кэшбэк до 5%</p>
-								</div>
-							</article>
-						</div>
-					</div>
-				</section>
-			</section>
-
-			<!-- Может быть полезно -->
-			<section class="helpful-resources">
-				<h2 class="section-title">Может быть полезно</h2>
-				<div class="resources-container">
-					<div class="resources-grid">
-						<article class="resource-card">
-							<img
-								src="img/2/note.svg"
-								alt="Тарифы icon"
-								class="resource-icon"
-							/>
-							<h3 class="card-title">Тарифы</h3>
-							<p class="card-description">
-								Доставка, обслуживание, доход.<br />
-								Пополнения и переводы
-							</p>
-							<a href="not_found.html" class="card-link">Изучить</a>
-						</article>
-
-						<article class="resource-card">
-							<img
-								src="img/2/circle.svg"
-								alt="Помощь icon"
-								class="resource-icon"
-							/>
-							<h3 class="card-title">Помощь</h3>
-							<p class="card-description">
-								Популярные вопросы. Советы<br />
-								о выгодном пользовании картой
-							</p>
-							<a href="not_found.html" class="card-link"
-								>Расплачиваться выгодно</a
+							<div
+								class="slider-container"
+								role="slider"
+								aria-valuemin="15000"
+								aria-valuemax="1000000"
+								aria-valuenow="70000"
 							>
+								<div class="slider-track">
+									<div class="slider-fill"></div>
+									<div class="slider-handle" role="slider" tabindex="0"></div>
+								</div>
+								<div class="slider-labels">
+									<span>15 000 ₸</span>
+									<span>100 000 ₸</span>
+									<span>500 000 ₸</span>
+									<span>1 000 000 ₸</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="dropdown-section">
+							<button class="dropdown-container" aria-expanded="false">
+								<span class="dropdown-label">Для чего вам нужна карта</span>
+								<i class="ti ti-chevron-down" aria-hidden="true"></i>
+							</button>
+						</div>
+
+						<div class="phone-section">
+							<h2 class="section-heading">К какому номеру привязать карту?</h2>
+							<input
+								type="tel"
+								class="phone-input"
+								placeholder="Мобильный телефон*"
+								aria-required="true"
+							/>
+						</div>
+
+						<div class="terms-section">
+							<p class="terms-text">
+								<span>Заполняя форму, я принимаю </span>
+								<a href="not_found.html" class="link">условия передачи</a>
+							</p>
+							<p class="terms-text">
+								<a href="not_found.html" class="link">информации</a>
+								<span> и даю </span>
+								<a href="not_found.html" class="link">согласие на получение</a>
+							</p>
+							<p class="terms-text-2">
+								информации о продуктах и услугах Банка и партнеров
+							</p>
+						</div>
+
+						<button class="next-button">Далее</button>
+					</div>
+
+					<aside class="right-section">
+						<div class="selected-card-info">
+							<h3 class="info-label">Вы выбрали карту с лимитом</h3>
+							<p class="info-amount">70 000 ₸</p>
+						</div>
+
+						<div class="form-card-preview">
+							<img
+								src="img/3/preview-card.png"
+								alt="Card preview"
+								class="preview-image"
+							/>
+							<h3 class="card-type">Пластиковая карта Платинум классическая</h3>
+						</div>
+
+						<div class="approval-section">
+							<h3 class="approval-label">Вероятность одобрения</h3>
+							<p class="approval-percentage">5%</p>
+							<div
+								class="progress-bar"
+								role="progressbar"
+								aria-valuenow="5"
+								aria-valuemin="0"
+								aria-valuemax="100"
+							>
+								<div class="progress-fill"></div>
+							</div>
+							<p class="progress-text">+20% за 1-й шаг</p>
+						</div>
+					</aside>
+				</article>
+			</section>
+
+			<!-- Выбор карты -->
+			<section class="promo-section">
+				<div class="promo-background">
+					<div class="promo-banner">
+						<article class="card-container">
+							<div class="content-wrapper">
+								<div class="content-column">
+									<div class="card-content">
+										<div class="category-tag">
+											<img
+												src="img/3/games.svg"
+												class="category-icon"
+												alt="Gaming icon"
+											/>
+											<span>Для игр</span>
+										</div>
+										<h2 class="card-title">Кредитная карта All Games</h2>
+										<p class="card-description">
+											Первая кредитная карта для геймеров. Бонусы за покупки.
+											Игры, софт и техника —
+											<br />
+											бесплатно
+										</p>
+										<div class="features-grid">
+											<div class="feature-item">
+												<strong class="feature-value">До 1 000 000 ₸</strong>
+												<span class="feature-label">Кредитный лимит</span>
+											</div>
+											<div class="feature-item">
+												<strong class="feature-value">До 5% кэшбэк</strong>
+												<span class="feature-label">
+													В магазинах игр
+													<br />
+													и техники
+												</span>
+											</div>
+											<div class="feature-item">
+												<strong class="feature-value">990 ₸ в год</strong>
+												<span class="feature-label"
+													>Стоимость обслуживания</span
+												>
+											</div>
+										</div>
+										<div class="cta-container">
+											<a href="#form-section" class="primary-button"
+												>Оформить карту</a
+											>
+											<a href="not_found.html" class="secondary-button"
+												>Подробнее</a
+											>
+										</div>
+									</div>
+								</div>
+								<div class="image-column">
+									<img
+										src="img/3/gamer.png"
+										class="promo-card-image"
+										alt="All Games credit card"
+									/>
+								</div>
+							</div>
+						</article>
+					</div>
+					<div class="promo-banner">
+						<article class="card-container">
+							<div class="content-wrapper">
+								<div class="content-column">
+									<div class="card-content">
+										<div class="category-tag">
+											<img
+												src="img/3/shopping.svg"
+												class="category-icon"
+												alt="Shopping icon"
+											/>
+											<span>Для онлайн-покупок</span>
+										</div>
+										<h2 class="card-title">Кредитная карта AliExpress</h2>
+										<p class="card-description">
+											Кредитная карта для выгодного шопинга на AliExpress:
+											платим кэшбэк бонусами —
+											<br />
+											обменивайте их на новые покупки
+										</p>
+										<div class="features-grid">
+											<div class="feature-item">
+												<strong class="feature-value">До 1 000 000 ₸</strong>
+												<span class="feature-label">Кредитный лимит</span>
+											</div>
+											<div class="feature-item">
+												<strong class="feature-value">3% кэшбэк</strong>
+												<span class="feature-label"
+													>За покупки на AliExpress</span
+												>
+											</div>
+											<div class="feature-item">
+												<strong class="feature-value">990 ₸ в год</strong>
+												<span class="feature-label"
+													>Стоимость обслуживания</span
+												>
+											</div>
+										</div>
+										<div class="cta-container">
+											<a href="#form-section" class="primary-button"
+												>Оформить карту</a
+											>
+											<a href="not_found.html" class="secondary-button"
+												>Подробнее</a
+											>
+										</div>
+									</div>
+								</div>
+								<div class="image-column">
+									<img
+										src="img/3/shopping.png"
+										class="promo-card-image"
+										alt="AliExpress credit card"
+									/>
+								</div>
+							</div>
 						</article>
 					</div>
 				</div>

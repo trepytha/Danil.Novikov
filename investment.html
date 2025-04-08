@@ -7,6 +7,7 @@
 			href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
 			rel="stylesheet"
 		/>
+		<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 		<link rel="stylesheet" href="css/footer.css" />
 		<link rel="stylesheet" href="css/header.css" />
 		<link rel="stylesheet" href="css/investment.css" />
@@ -50,7 +51,7 @@
 						<a href="not_found.html" class="nav-item">Еще</a>
 					</nav>
 
-					<a class="profile-btn" href="not_found.html">
+					<a class="profile-btn" href="lk.html">
 						<span>Личный кабинет</span>
 						<svg
 							class="profile-icon"
@@ -793,7 +794,7 @@
 			<!-- 20 миллионов уже с нами -->
 			<section class="benefits-section">
 				<h2 class="benefits-header">20 миллионов клиентов уже с нами</h2>
-
+				<canvas id="myPieChart"></canvas>
 				<div class="benefits-container">
 					<div class="benefits-grid">
 						<div class="benefits-column">
@@ -1253,5 +1254,6 @@
 				</section>
 			</footer>
 		</div>
+		<script src="script.js"></script>
 	</body>
 </html>

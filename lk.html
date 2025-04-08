@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Личный кабинет — Анализ расходов</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #e9edf3;
+    }
+    header {
+      background-color: rgba(191, 6, 3, 1);
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.5rem;
+    }
+    nav a {
+      color: white;
+      margin-left: 1.5rem;
+      text-decoration: none;
+      font-size: 1rem;
+    }
+    .main-content {
+      padding: 2rem;
+    }
+    .card {
+      background: white;
+      border-radius: 1rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 2rem;
+      max-width: 900px;
+      margin: 2rem auto;
+    }
+    h2 {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Личный кабинет</h1>
+    <nav>
+      <a href="not_found.html">Главная</a>
+      <a href="not_found.html">Мои расходы</a>
+      <a href="not_found.html">Настройки</a>
+      <a href="not_found.html">Выход</a>
+    </nav>
+  </header>
+
+  <div class="main-content">
+    <div class="card">
+      <h2>Анализ расходов по категориям</h2>
+      <canvas id="bubbleChart" width="600" height="400"></canvas>
+    </div>
+  </div>
+
+  <script>
+    const ctx = document.getElementById('bubbleChart').getContext('2d');
+    const bubbleChart = new Chart(ctx, {
+      type: 'bubble',
+      data: {
+        datasets: [
+          {
+            label: 'Еда',
+            data: [{ x: 1, y: 8, r: 20 }],
+            backgroundColor: 'rgba(255, 99, 132, 0.6)'
+          },
+          {
+            label: 'Транспорт',
+            data: [{ x: 2, y: 5, r: 15 }],
+            backgroundColor: 'rgba(54, 162, 235, 0.6)'
+          },
+          {
+            label: 'Развлечения',
+            data: [{ x: 3, y: 4, r: 25 }],
+            backgroundColor: 'rgba(255, 206, 86, 0.6)'
+          },
+          {
+            label: 'Коммунальные услуги',
+            data: [{ x: 4, y: 3, r: 18 }],
+            backgroundColor: 'rgba(75, 192, 192, 0.6)'
+          }
+        ]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          tooltip: {
+            callbacks: {
+              label: function(context) {
+                return `${context.dataset.label}: \nСумма: ${context.raw.r * 1000} руб.`;
+              }
+            }
+          },
+          legend: {
+            position: 'bottom'
+          },
+          title: {
+            display: true,
+            text: 'Категории расходов: частота и сумма'
+          }
+        },
+        scales: {
+          x: {
+            title: {
+              display: true,
+              text: 'Категория (условная шкала)'
+            },
+            ticks: {
+              callback: function(value) {
+                const labels = ['Еда', 'Транспорт', 'Развлечения', 'Ком. услуги'];
+                return labels[value - 1] || value;
+              },
+              stepSize: 1
+            },
+            min: 0,
+            max: 5
+          },
+          y: {
+            title: {
+              display: true,
+              text: 'Частота операций'
+            },
+            beginAtZero: true,
+            max: 10
+          }
+        }
+      }
+    });
+  </script>
+</body>
+</html>

@@ -437,7 +437,7 @@ document.addEventListener('DOMContentLoaded', function() {
     color: var(--text-primary);
 }
 .dark-theme .card-design-section .section-title{
-    background-color: var(--bg-primary);
+    background-color: var(--bg-tretiary);
 }
 .dark-theme .form-field{
     background-color: rgb(94 119 155 / 6%);

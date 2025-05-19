@@ -1,3 +1,7 @@
+*{
+	font-family: Roboto;
+}
+
 .hero {
 	padding: 200px 0;
 	background-image: url(../img/1/main-bg.png);
@@ -450,4 +454,57 @@
 .quick-link-btn:hover {
 	background-color: rgba(32, 104, 211, 0.5);
 	border: 1px solid rgba(32, 104, 211, 0.5);
+}
+
+.burger-menu{
+	display: none;
+}
+/* Hide desktop nav and show burger on small screens */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .burger-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 28px;
+    height: 22px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1001;
+	margin-left: 30px;
+  }
+
+  .burger-menu span {
+    height: 3px;
+    background: #333;
+    border-radius: 2px;
+  }
+
+  .mobile-nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    background-color: white;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    z-index: 1000;
+	border-radius: 16px;;
+  }
+
+  .mobile-nav a {
+    padding: 10px 0;
+    text-decoration: none;
+    color: #333;
+  }
+
+  .mobile-nav.open {
+    display: flex;
+  }
 }

@@ -1,0 +1,497 @@
+/* Dark Theme для W-Bank - dark-theme.css */
+
+/* Основные цвета и переменные темной темы */
+:root.dark-theme {
+    --bg-primary: #121212;           /* Основной темный фон */
+    --bg-secondary: #1e1e1e;         /* Вторичный темный фон (чуть светлее) */
+    --bg-tertiary: #252525;          /* Третичный темный фон для карточек */
+    --text-primary: #ffffff;         /* Основной цвет текста */
+    --text-secondary: rgba(255, 255, 255, 0.8); /* Вторичный цвет текста */
+    --text-muted: rgba(255, 255, 255, 0.6);    /* Приглушенный текст */
+    --accent-color: #bf0603;         /* Сохраняем основной акцентный цвет (красный) */
+    --accent-hover: #d82c29;         /* Акцентный цвет при наведении */
+    --border-color: rgba(255, 255, 255, 0.12); /* Цвет границ */
+    --card-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Тень для карточек */
+}
+
+/* Базовые стили для темной темы */
+html.dark-theme,
+body.dark-theme {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    transition: all 0.3s ease;
+}
+
+/* Контейнер приложения */
+.dark-theme .app {
+    background-color: var(--bg-primary);
+}
+
+/* Шапка сайта */
+.dark-theme .header {
+    background-color: var(--bg-secondary);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.dark-theme .navigation{
+    background-color: var(--bg-primary);
+}
+
+.dark-theme .chevron-button path{
+    fill: var(--text-primary);
+}
+
+.dark-theme .nav-item {
+    color: var(--text-secondary);
+}
+
+.dark-theme .nav-item:hover {
+    color: var(--text-primary);
+}
+
+.dark-theme .breadcrumb{
+    color: var(--text-primary);
+}
+
+/* Логотип */
+.dark-theme .logo-container img {
+    filter: brightness(1.2); /* Делаем логотип чуть ярче для темного фона */
+}
+
+/* Кнопки */
+.dark-theme .primary-btn {
+    background-color: var(--accent-color);
+    color: var(--text-primary);
+    border: 1px solid var(--accent-color);
+}
+
+.dark-theme .primary-btn:hover {
+    background-color: var(--accent-hover);
+    color: var(--text-primary);
+}
+
+.dark-theme .secondary-btn {
+    background-color: var(--bg-tertiary);
+    color: var(--text-primary);
+    border: 1px solid var(--border-color);
+}
+
+.dark-theme .secondary-btn:hover {
+    background-color: var(--accent-hover);
+}
+.dark-theme .outline-btn, .dark-theme .banner-button{
+    background-color: #bf060342;
+    color: #fff;
+    border: 1px solid var(--accent-color);
+}
+.dark-theme .outline-btn:hover{
+    background-color: var(--accent-color);
+}
+
+/* Карточки и блоки */
+.dark-theme .card,
+.dark-theme .product-card,
+.dark-theme .service-card {
+    background-color: var(--bg-tertiary);
+    box-shadow: var(--card-shadow);
+    border: 1px solid var(--border-color);
+}
+
+.dark-theme .card-title,
+.dark-theme .product-title,
+.dark-theme .service-title {
+    color: var(--text-primary);
+}
+
+.dark-theme .card-text,
+.dark-theme .product-desc,
+.dark-theme .service-desc {
+    color: var(--text-secondary);
+}
+
+/* Секции и разделители */
+.dark-theme section {
+    background-color: var(--bg-primary);
+}
+
+.dark-theme .divider {
+    background-color: var(--border-color);
+}
+
+/* Героическая секция */
+.dark-theme .hero {
+    background-color: var(--bg-primary);
+}
+
+.dark-theme .hero-text,
+.dark-theme .hero-subtitle,
+.dark-theme .hero-title,
+.dark-theme .hero-description {
+    color: var(--text-primary);
+}
+
+.dark-theme .nav-icons{
+    background-color: var(--bg-secondary);
+}
+.dark-theme .nav-icon-item{
+    background-color: #2c2c2c;
+}
+.dark-theme .nav-icon-text{
+    color: var(--text-primary);
+}
+
+
+/* Футер */
+.dark-theme .footer-light {
+    background-color: var(--bg-secondary);
+    box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.dark-theme .footer-nav-section {
+    background-color: var(--bg-secondary);
+}
+
+.dark-theme .footer-nav-section .nav-group{
+    background-color: transparent;
+}
+
+.dark-theme .nav-group a {
+    color: var(--text-secondary);
+}
+
+.dark-theme .nav-group a:hover {
+    color: var(--text-primary);
+}
+
+.dark-theme .nav-title, .dark-theme .nav-subtitle {
+    color: var(--text-primary);
+}
+
+
+/* Категории на главной странице */
+.dark-theme .category-item {
+    background-color: var(--bg-tertiary);
+    border: 1px solid var(--border-color);
+}
+
+.dark-theme .category-title {
+    color: var(--text-primary);
+}
+
+/* Рекомендуемые продукты */
+.dark-theme .section-title{
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+}
+
+.dark-theme .recommended-products {
+    background-color: var(--bg-primary);
+}
+
+.dark-theme .product-card {
+    background-color: var(--bg-tertiary);
+}
+
+/* Сервисы и услуги */
+.dark-theme .services-section {
+    background-color: var(--bg-secondary);
+}
+
+.dark-theme .service-card {
+    background-color: var(--bg-tertiary);
+}
+
+/* Актуальные новости и предложения */
+.dark-theme .current-news-header, .dark-theme .section-header{
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+}
+
+.dark-theme .news-grid-container, .dark-theme .more-articles{
+    background-color: var(--bg-primary);
+}
+
+.dark-theme .news-card {
+    background-color: var(--bg-tertiary);
+    border: 1px solid var(--border-color);
+}
+
+.dark-theme .news-title {
+    color: var(--text-primary);
+}
+
+.dark-theme .news-desc {
+    color: var(--text-secondary);
+}
+
+.dark-theme .card-description{
+    color: var(--text-primary);
+}
+
+.dark-theme .card-dark{
+    background-color: #343741;
+}
+
+.dark-theme .help-card, .dark-theme .reviews-card{
+    background-color: var(--bg-tertiary);
+    border: 1px solid var(--border-color);
+}
+
+/* Формы и инпуты */
+.dark-theme input,
+.dark-theme textarea,
+.dark-theme select {
+    background-color: var(--bg-tertiary);
+    color: var(--text-primary);
+}
+
+.dark-theme input::placeholder,
+.dark-theme textarea::placeholder {
+    color: var(--text-muted);
+}
+
+.dark-theme input:focus,
+.dark-theme textarea:focus,
+.dark-theme select:focus {
+    border-color: var(--accent-color);
+    outline: none;
+}
+
+
+
+/* Курсы валют и финансовые блоки */
+.dark-theme .currency-card,
+.dark-theme .financial-block {
+    background-color: var(--bg-tertiary);
+    border: 1px solid var(--border-color);
+}
+
+/* Иконки и изображения */
+.dark-theme .icon {
+    filter: brightness(1.5); /* Делаем иконки светлее для темного фона */
+}
+
+/* Таблицы */
+.dark-theme table {
+    background-color: var(--bg-tertiary);
+    color: var(--text-primary);
+    border: 1px solid var(--border-color);
+}
+
+.dark-theme th {
+    background-color: var(--bg-secondary);
+    color: var(--text-primary);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.dark-theme td {
+    border-bottom: 1px solid var(--border-color);
+    color: var(--text-secondary);
+}
+
+/* Модальные окна */
+.dark-theme .modal {
+    background-color: var(--bg-tertiary);
+    border: 1px solid var(--border-color);
+    box-shadow: var(--card-shadow);
+}
+
+.dark-theme .modal-header {
+    border-bottom: 1px solid var(--border-color);
+}
+
+.dark-theme .modal-title {
+    color: var(--text-primary);
+}
+
+.dark-theme .modal-footer {
+    border-top: 1px solid var(--border-color);
+}
+
+/* Поиск */
+.dark-theme .search-input {
+    background-color: var(--bg-tertiary);
+    color: var(--text-primary);
+}
+.dark-theme .search-box{
+ background-color: var(--bg-tertiary);
+}
+.dark-theme .quick-link-btn{
+    color: var(--text-primary);
+}
+
+/* Профиль пользователя */
+.dark-theme .profile-btn {
+    color: var(--text-secondary);
+}
+
+.dark-theme .profile-dropdown {
+    background-color: var(--bg-tertiary);
+    border: 1px solid var(--border-color);
+    box-shadow: var(--card-shadow);
+}
+
+/* Настройка изображений банковских карт для темной темы */
+.dark-theme .card-image {
+    filter: brightness(0.9); /* Немного затемняем изображения карт */
+}
+
+/* Графики и диаграммы */
+.dark-theme .chart-container {
+    background-color: var(--bg-tertiary);
+    border: 1px solid var(--border-color);
+}
+
+.dark-theme .chart-title {
+    color: var(--text-primary);
+}
+
+/* Переключатель темы */
+.theme-toggle {
+    position: relative;
+    width: 60px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: #121212;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-left: 20px;
+}
+
+.theme-toggle.light {
+    background-color: #f6f7f8;
+}
+
+.theme-toggle-knob {
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    top: 2px;
+    left: 2px;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.theme-toggle.light .theme-toggle-knob {
+    left: 32px;
+    background-color: #bf0603;
+}
+
+/* JavaScript для переключения темы */
+/*
+// Добавьте следующий скрипт в ваш HTML-файл
+
+document.addEventListener('DOMContentLoaded', function() {
+    const themeToggle = document.querySelector('.theme-toggle');
+    
+    themeToggle.addEventListener('click', function() {
+        document.documentElement.classList.toggle('dark-theme');
+        document.body.classList.toggle('dark-theme');
+        themeToggle.classList.toggle('light');
+    });
+});
+*/
+
+
+.dark-theme .banner-container{
+    background-color: var(--bg-tertiary);
+}
+.dark-theme .banner-text{
+    color: var(--text-primary);
+}
+.dark-theme .steps-process__header, .dark-theme .steps-process__content{
+    background-color: var(--bg-secondary);
+
+}
+.dark-theme .steps-process__title{
+    color: var(--text-primary);
+}
+.dark-theme  .step-card{
+    background-color: #333;
+    
+}
+.dark-theme  .step-card__description{
+    color: var(--text-primary);
+}
+.dark-theme .step-card__number{
+    background-color: var(--text-primary);
+    color: var(--bg-primary);
+}
+.dark-theme .left-panel{
+    background-color: var(--bg-tertiary);
+}
+.dark-theme .cashback-info{
+    background-color: var(--bg-primary);
+}
+.dark-theme .cashback-title, .dark-theme .cashback-subtitle{
+    color: var(--text-primary);
+}
+.dark-theme .right-panel{
+    background-color: var(--bg-tertiary);
+}
+.dark-theme .progress-text, .dark-theme .progress-percentage{
+    color: var(--text-primary);
+}
+.dark-theme .card-design-section .section-title{
+    background-color: var(--bg-primary);
+}
+.dark-theme .form-field{
+    background-color: rgb(94 119 155 / 6%);
+}
+.dark-theme .form-field label{
+    color: #a7a7a7;
+}
+.dark-theme .dropdown-menu{
+    background-color: var(--bg-tertiary);
+}
+.dark-theme .dropdown-item:hover{
+    background-color: #f5f5f521;
+}
+.dark-theme .citizenship-title{
+    color: var(--text-primary);
+}
+.dark-theme .radio-option{
+    background-color: var(--bg-tertiary);
+    border-color: var(--border-color);
+}
+.dark-theme .radio-text{
+    color: var(--text-primary);
+}
+.dark-theme .radio-option.selected{
+    background-color: #bf060317;
+    border-color: var(--accent-color);
+}
+.dark-theme .radio-option.selected .radio-button{
+    border-color: var(--accent-color);
+}
+.dark-theme #birthdate{
+    color-scheme: dark;
+}
+.dark-theme .category-title, .dark-theme .cashback-text{
+    color: #000;
+}
+.dark-theme .resources-container{
+    background-color: var(--bg-primary);
+}
+.dark-theme .faq-header{
+    color: var(--text-primary);
+}
+.dark-theme .faq-card{
+    background-color: var(--bg-tertiary);
+}
+.dark-theme .question-text{
+    color: var(--text-primary);
+}
+.dark-theme .faq-item{
+    border-bottom: 1px solid #525252;
+}
+.dark-theme .chevron-icon path{
+    fill: var(--text-primary);
+}
+.dark-theme .mobile-nav.open{
+    background-color: var(--bg-secondary);
+}

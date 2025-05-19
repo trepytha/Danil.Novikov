@@ -1,45 +1,45 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Card design selection
+    // Выбор дизайна карты
     const cardOptions = document.querySelectorAll('.card-option');
     const cardRadios = document.querySelectorAll('.card-radio');
     const previewImage = document.getElementById('preview-image');
     
     cardOptions.forEach(option => {
         option.addEventListener('click', function() {
-            // Remove selected class from all options
+            // Удалить выбранный класс из всех вариантов
             cardOptions.forEach(opt => {
                 opt.classList.remove('selected');
             });
             
-            // Add selected class to clicked option
+            // Добавить выбранный класс к выбранной опции
             this.classList.add('selected');
             
-            // Find and check the radio button
+            // Найдите и проверьте переключатель.
             const radio = this.querySelector('.card-radio');
             radio.checked = true;
             
-            // Update preview image
+            // Обновить изображение предварительного просмотра
             const cardImage = this.querySelector('.card-image');
             previewImage.src = cardImage.src;
         });
     });
     
-    // Credit limit slider functionality
+    // Функциональность ползунка кредитного лимита
     const sliderContainer = document.getElementById('slider-container');
     const sliderHandle = document.getElementById('slider-handle');
     const sliderFill = document.getElementById('slider-fill');
     const limitDisplay = document.getElementById('limit-display');
     const infoAmountDisplay = document.getElementById('info-amount-display');
     
-    // Min and max values
+    // Минимальные и максимальные значения
     const minValue = 15000;
     const maxValue = 1000000;
     let currentValue = 70000;
     
-    // Initialize slider position
+    // Инициализировать положение ползунка
     updateSliderPosition();
     
-    // Slider drag functionality
+    // Функция перетаскивания слайдера
     let isDragging = false;
     
     sliderHandle.addEventListener('mousedown', startDrag);
@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.addEventListener('mouseup', endDrag);
     document.addEventListener('touchend', endDrag);
     
-    // Slider click functionality
+    // Функциональность щелчка слайдера
     sliderContainer.addEventListener('click', function(e) {
         if (e.target !== sliderHandle) {
             const rect = sliderContainer.getBoundingClientRect();
@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', function() {
         e.preventDefault();
         const rect = sliderContainer.getBoundingClientRect();
         
-        // Get clientX for both mouse and touch events
+        // Получите clientX для событий мыши и касания
         let clientX;
         if (e.type === 'touchmove') {
             clientX = e.touches[0].clientX;
@@ -82,12 +82,12 @@ document.addEventListener('DOMContentLoaded', function() {
             clientX = e.clientX;
         }
         
-        // Calculate x position within the container bounds
+        // Рассчитать положение x в пределах границ контейнера
         let x = clientX - rect.left;
         if (x < 0) x = 0;
         if (x > rect.width) x = rect.width;
         
-        // Calculate percentage and value
+        // Рассчитать процент и значение
         const percentage = x / rect.width;
         currentValue = Math.round((percentage * (maxValue - minValue)) + minValue);
         
@@ -99,23 +99,23 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     function updateSliderPosition() {
-        // Ensure value is within boundaries
+        // Убедитесь, что ценность находится в пределах границ
         if (currentValue < minValue) currentValue = minValue;
         if (currentValue > maxValue) currentValue = maxValue;
         
-        // Calculate percentage for visual representation
+        // Рассчитать процент для визуального представления
         const percentage = ((currentValue - minValue) / (maxValue - minValue)) * 100;
         
-        // Update slider handle and fill position
+        // Обновить ползунок и заполнить позицию
         sliderHandle.style.left = `${percentage}%`;
         sliderFill.style.width = `${percentage}%`;
         
-        // Format and display the value
+        // Форматировать и отображать значениеe
         const formattedValue = formatCurrency(currentValue);
         limitDisplay.textContent = formattedValue;
         infoAmountDisplay.textContent = formattedValue;
         
-        // Update aria attributes
+        // Обновить атрибуты арии
         sliderContainer.setAttribute('aria-valuenow', currentValue);
     }
     
@@ -123,20 +123,20 @@ document.addEventListener('DOMContentLoaded', function() {
         return value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ") + " ₸";
     }
     
-    // Dropdown functionality
+    // Функциональность раскрывающегося списка
     const dropdownButton = document.getElementById('dropdown-button');
     const dropdownMenu = document.getElementById('dropdown-menu');
     const dropdownLabel = document.getElementById('dropdown-label');
     const purposeInput = document.getElementById('purpose-input');
     
-    // Toggle dropdown
+    // Переключить раскрывающийся список
     dropdownButton.addEventListener('click', function() {
         dropdownMenu.classList.toggle('active');
         const isExpanded = dropdownMenu.classList.contains('active');
         dropdownButton.setAttribute('aria-expanded', isExpanded);
     });
     
-    // Close dropdown when clicking outside
+    // Закройте раскрывающийся список при щелчке за пределами
     document.addEventListener('click', function(e) {
         if (!dropdownButton.contains(e.target) && !dropdownMenu.contains(e.target)) {
             dropdownMenu.classList.remove('active');
@@ -144,7 +144,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
     
-    // Select dropdown item
+    // Выберите элемент раскрывающегося списка
     const dropdownItems = document.querySelectorAll('.dropdown-item');
     dropdownItems.forEach(item => {
         item.addEventListener('click', function() {
@@ -156,7 +156,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Phone input formatting
+    // Форматирование ввода телефона
     const phoneInput = document.getElementById('phone-input');
     
     phoneInput.addEventListener('input', function(e) {
@@ -181,12 +181,12 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
     
-    // Form submission
+    // Отправка формы
     const form = document.getElementById('form-section');
     form.addEventListener('submit', function(e) {
         e.preventDefault();
         
-        // Basic validation
+        // Базовая проверка
         if (!purposeInput.value) {
             alert('Пожалуйста, выберите цель использования карты');
             return;
@@ -197,7 +197,7 @@ document.addEventListener('DOMContentLoaded', function() {
             return;
         }
         
-        // Form data collection for submission
+        // Форма сбора данных для отправки
         const selectedCard = document.querySelector('.card-radio:checked').value;
         
         const formData = {

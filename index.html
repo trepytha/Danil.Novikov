@@ -44,12 +44,21 @@
 							></path>
 					</img>
 					</a>
-					<nav class="nav-links">
+					
+					<!-- <nav class="nav-links">
 						<a href="not_found.html" class="nav-item">Частным лицам</a>
 						<a href="not_found.html" class="nav-item">Бизнесу</a>
 						<a href="not_found.html" class="nav-item">Премиум</a>
 						<a href="not_found.html" class="nav-item">Еще</a>
-					</nav>
+					</nav> -->
+					<!-- Mobile Navigation -->
+					<nav class="mobile-nav" id="mobileNav">
+  						<a href="not_found.html" class="nav-item">Частным лицам</a>
+						<a href="not_found.html" class="nav-item">Бизнесу</a>
+						<a href="not_found.html" class="nav-item">Премиум</a>
+						<a href="not_found.html" class="nav-item">Еще</a>
+						</nav>
+
 
 					<a class="profile-btn" href="not_found.html">
 						<span>Личный кабинет</span>
@@ -97,11 +106,17 @@
 							</defs>
 						</svg>
 					</a>
-				<div class="theme-toggle light">
+									<div class="theme-toggle light">
     			<div class="theme-toggle-knob"></div>
+			</div>
+			<!-- Burger Menu Button -->
+					<button class="burger-menu" id="burgerMenu">
+ 					 <span></span>
+  					<span></span>
+  					<span></span>
+					</button>
 				</div>
-				</div>
-				</div>
+				
 			</header>
 
 			<section class="hero">
@@ -174,7 +189,7 @@
 			</nav>
 
 			<h2 class="section-title">Рекомендуемые продукты</h2>
-
+     
 			<section class="products-section">
 				<div class="products">
 					<article class="product-card product-card--platinum">
@@ -840,7 +855,7 @@
 				</section>
 			</footer>
 		</div>
-				<script>
+		<script>
 document.addEventListener('DOMContentLoaded', function() {
     const themeToggle = document.querySelector('.theme-toggle');
     
@@ -865,6 +880,15 @@ document.addEventListener('DOMContentLoaded', function() {
         themeToggle.classList.remove('light');
     }
 });
+  const burgerMenu = document.getElementById('burgerMenu');
+  const mobileNav = document.getElementById('mobileNav');
+
+  burgerMenu.addEventListener('click', () => {
+    mobileNav.classList.toggle('open');
+  });
+
+
 </script>
+
 	</body>
 </html>

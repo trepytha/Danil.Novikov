@@ -492,3 +492,6 @@ document.addEventListener('DOMContentLoaded', function() {
 .dark-theme .chevron-icon path{
     fill: var(--text-primary);
 }
+.dark-theme .mobile-nav.open{
+    background-color: var(--bg-secondary);
+}

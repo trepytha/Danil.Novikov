@@ -1,14 +1,14 @@
-        // Выбор дизайна карты
+        // Card design selection
         const cardDesignInputs = document.querySelectorAll('input[name="cardDesign"]');
         const previewImage = document.getElementById('previewImage');
         const cardDesigns = document.querySelectorAll('.card-design');
 
         cardDesignInputs.forEach(input => {
             input.addEventListener('change', function() {
-                // Обновить изображение предварительного просмотра
+                // Update preview image
                 previewImage.src = this.value;
                 
-                // Обновить активный класс
+                // Update active class
                 cardDesigns.forEach(design => {
                     design.classList.remove('active');
                 });
@@ -18,7 +18,7 @@
             });
         });
 
-        // Функциональность раскрывающегося списка категорий
+        // Category dropdown functionality
         const dropdownToggle = document.getElementById('dropdownToggle');
         const categoriesMenu = document.getElementById('categoriesMenu');
         const selectedCategories = document.getElementById('selectedCategories');
@@ -32,7 +32,7 @@
             dropdownToggle.querySelector('svg').classList.toggle('rotate-180');
         });
 
-        // Закройте раскрывающийся список при щелчке за пределами
+        // Close dropdown when clicking outside
         document.addEventListener('click', function(e) {
             if (!e.target.closest('.dropdown-container')) {
                 categoriesMenu.classList.remove('show');
@@ -44,16 +44,16 @@
             item.addEventListener('click', function() {
                 const categoryValue = this.getAttribute('data-value');
                 
-                // Проверьте, выбрано ли оно уже
+                // Check if already selected
                 if (this.classList.contains('selected')) {
-                    // Удалить из выбранных
+                    // Remove from selected
                     this.classList.remove('selected');
                     const index = selectedCategoriesArray.indexOf(categoryValue);
                     if (index !== -1) {
                         selectedCategoriesArray.splice(index, 1);
                     }
                 } else {
-                    // Добавить к выбранным, если меньше макс.
+                    // Add to selected if less than max
                     if (selectedCategoriesArray.length < MAX_CATEGORIES) {
                         this.classList.add('selected');
                         selectedCategoriesArray.push(categoryValue);
@@ -63,7 +63,7 @@
                     }
                 }
                 
-                // Обновить отображение выбранных категорий
+                // Update selected categories display
                 updateSelectedCategories();
                 updateProgress();
             });
@@ -78,7 +78,7 @@
                 selectedCategories.appendChild(span);
             });
 
-            // Добавить событие нажатия для удаления кнопок
+            // Add click event to remove buttons
             document.querySelectorAll('.remove-option').forEach(btn => {
                 btn.addEventListener('click', function(e) {
                     e.stopPropagation();
@@ -87,7 +87,7 @@
                     if (index !== -1) {
                         selectedCategoriesArray.splice(index, 1);
                     }
-                    // Удалить выбранный класс из раскрывающегося списка
+                    // Remove selected class from dropdown item
                     document.querySelector(`.dropdown-item[data-value="${categoryToRemove}"]`).classList.remove('selected');
                     updateSelectedCategories();
                     updateProgress();
@@ -95,7 +95,7 @@
             });
         }
 
-        // Радиокнопки гражданства
+        // Citizenship radio buttons
         const citizenYes = document.getElementById('citizenYes');
         const citizenNo = document.getElementById('citizenNo');
         
@@ -113,7 +113,7 @@
             updateProgress();
         });
 
-        // Проверка формы и прогресс
+        // Form validation and progress
         const cardForm = document.getElementById('cardForm');
         const fullName = document.getElementById('fullName');
         const phone = document.getElementById('phone');
@@ -122,22 +122,22 @@
         const progressBarFill = document.getElementById('progressBarFill');
         const progressPercentage = document.getElementById('progressPercentage');
 
-        // Слушатели входных событий
+        // Input event listeners
         [fullName, phone, email, birthdate].forEach(input => {
             input.addEventListener('input', updateProgress);
         });
 
-        // Маска телефона
+        // Phone mask
         phone.addEventListener('input', function(e) {
             let x = e.target.value.replace(/\D/g, '').match(/(\d{0,1})(\d{0,3})(\d{0,3})(\d{0,2})(\d{0,2})/);
             e.target.value = !x[2] ? x[1] : '+' + x[1] + ' (' + x[2] + ') ' + (x[3] ? x[3] + '-' : '') + (x[4] ? x[4] + '-' : '') + x[5];
         });
 
-        // Отправка формы
+        // Form submission
         cardForm.addEventListener('submit', function(e) {
             e.preventDefault();
             
-            // Базовая проверка
+            // Basic validation
             if (!fullName.value) {
                 alert('Пожалуйста, укажите ФИО');
                 fullName.focus();
@@ -162,56 +162,56 @@
                 return;
             }
 
-            // Если все проверки пройдены, вы обычно отправляете форму на сервер.
+            // If all validation passes, you would typically submit the form to the server
             alert('Форма отправлена успешно!');
         });
 
-        // Проверка электронной почты
+        // Email validation
         function isValidEmail(email) {
             const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
             return re.test(String(email).toLowerCase());
         }
 
-        // Обновление функции прогресса
+        // Update progress function
         function updateProgress() {
-            let progress = 5; // Начиная с 5%
+            let progress = 5; // Starting with 5%
             
-            // Выбран дизайн карты (10%)
+            // Card design selected (10%)
             if (document.querySelector('input[name="cardDesign"]:checked')) {
                 progress += 10;
             }
             
-            // Выбранные категории (до 20%) 
+            // Categories selected (up to 20%)
             progress += selectedCategoriesArray.length * 5;
             
-            // Полное имя (20%)
+            // Full name (20%)
             if (fullName.value.trim() !== '') {
                 progress += 20;
             }
             
-            // Телефон (15%)
+            // Phone (15%)
             if (phone.value && phone.value.replace(/\D/g, '').length >= 11) {
                 progress += 15;
             }
             
-            // Электронная почта (необязательно - 10%)
+            // Email (optional - 10%)
             if (email.value && isValidEmail(email.value)) {
                 progress += 10;
             }
             
-            // Дата рождения (15%)
+            // Birthdate (15%)
             if (birthdate.value) {
                 progress += 15;
             }
             
-            // Гражданство уже выбрано по умолчанию (5%)
+            // Citizenship already selected by default (5%)
             progress += 5;
             
-            // Установить прогресс (ограничение 100%)
+            // Set progress (cap at 100%)
             progress = Math.min(progress, 100);
             progressBarFill.style.width = `${progress}%`;
             progressPercentage.textContent = `${progress}%`;
         }
 
-        // Первоначальное обновление прогресса
+        // Initial progress update
         updateProgress();

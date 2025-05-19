@@ -7,6 +7,324 @@
 			href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
 			rel="stylesheet"
 		/>
+				<link rel="stylesheet" href="dark-theme.css">
+		<style>
+
+			.container {
+				max-width: 1200px;
+				margin: 0 auto;
+				padding: 20px;
+				display: flex;
+				flex-wrap: wrap;
+				gap: 30px;
+			}
+			.left-panel {
+				flex: 1;
+				min-width: 300px;
+				padding: 20px;
+				background-color: white;
+				border-radius: 16px;
+				box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+			}
+			.right-panel {
+				flex: 2;
+				min-width: 400px;
+				padding: 20px;
+				background-color: white;
+				border-radius: 16px;
+				box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+			}
+			.card-title {
+				font-size: 24px;
+				font-weight: 700;
+				margin-bottom: 20px;
+			}
+			.card-preview {
+				margin-bottom: 24px;
+				text-align: center;
+			}
+			.debit-card-image {
+				max-width: 100%;
+				height: auto;
+				border-radius: 12px;
+			}
+			.cashback-info {
+				display: flex;
+				align-items: center;
+				background-color: #f5f5f5;
+				border-radius: 12px;
+				padding: 16px;
+			}
+			.cashback-icon {
+				font-size: 24px;
+				font-weight: bold;
+				margin-right: 12px;
+				background-color: #e3f2fd;
+				border-radius: 50%;
+				width: 40px;
+				height: 40px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+			.cashback-title {
+				font-size: 18px;
+				font-weight: 600;
+				margin: 0;
+			}
+			.cashback-subtitle {
+				font-size: 14px;
+				color: #666;
+				margin: 4px 0 0 0;
+			}
+			.progress-section {
+				margin-bottom: 24px;
+			}
+			.progress-text {
+				font-size: 14px;
+				color: #666;
+				margin-bottom: 8px;
+			}
+			.progress-percentage {
+				font-weight: 600;
+				margin-bottom: 8px;
+			}
+			.progress-bar {
+				width: 100%;
+				height: 8px;
+				background-color: #e9ecef;
+				border-radius: 4px;
+				overflow: hidden;
+				position: relative;
+			}
+			.progress-bar-fill {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 5%;
+				height: 100%;
+				background-color: #4299e1;
+				border-radius: 4px;
+			}
+			.section-title {
+				font-size: 18px;
+				font-weight: 600;
+				margin-bottom: 16px;
+			}
+			.card-designs {
+				display: grid;
+				grid-template-columns: repeat(3, 1fr);
+				gap: 12px;
+				margin-bottom: 24px;
+			}
+			.card-design {
+				border: 2px solid transparent;
+				border-radius: 8px;
+				overflow: hidden;
+				cursor: pointer;
+				transition: all 0.2s;
+				padding: 0;
+				background: none;
+			}
+			.card-design input{
+				display: none;
+			}
+			.card-design.active {
+				border-color: #4299e1;
+			}
+			.design-image {
+				width: 100%;
+				height: auto;
+				display: block;
+			}
+			.form-section {
+				margin-top: 24px;
+			}
+			.form-field {
+				margin-bottom: 16px;
+				position: relative;
+			}
+			.form-field label {
+				display: block;
+				font-size: 14px;
+				color: #666;
+				margin-bottom: 6px;
+			}
+			.form-field input,
+			.form-field select {
+				padding: 12px;
+				border: 1px solid #ddd;
+				border-radius: 8px;
+				font-size: 16px;
+			}
+			.form-row {
+				display: flex;
+				gap: 16px;
+				margin-bottom: 16px;
+			}
+			.half {
+				flex: 1;
+			}
+			.bonus-tag {
+				position: absolute;
+				right: 12px;
+				top: 12px;
+				background-color: #ebf7ee;
+				color: #22c55e;
+				font-size: 12px;
+				padding: 4px 8px;
+				border-radius: 4px;
+			}
+			.citizenship-section {
+				border: none;
+				margin-bottom: 16px;
+				padding: 0;
+			}
+			.citizenship-title {
+				font-size: 14px;
+				color: #666;
+				margin-bottom: 12px;
+				font-weight: normal;
+				padding: 0;
+			}
+			.radio-group {
+				display: flex;
+				gap: 16px;
+			}
+			.radio-option {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				padding: 12px 16px;
+				border: 1px solid #ddd;
+				border-radius: 8px;
+				cursor: pointer;
+				flex: 1;
+			}
+			.radio-option.selected {
+				border-color: #4299e1;
+				background-color: #ebf8ff;
+			}
+			.radio-button {
+				width: 20px;
+				height: 20px;
+				border-radius: 50%;
+				border: 2px solid #ddd;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+			.radio-option.selected .radio-button {
+				border-color: #4299e1;
+				background-color: #bf0603;
+			}
+			.radio-option input{
+				display: none;
+			}
+			.radio-dot {
+				width: 10px;
+				height: 10px;
+				border-radius: 50%;
+				background-color: #4299e1;
+			}
+			.form-divider {
+				border: none;
+				border-top: 1px solid #eee;
+				margin: 24px 0;
+			}
+			.terms-section {
+				margin-top: 24px;
+			}
+			.terms-text {
+				font-size: 14px;
+				color: #666;
+				margin-bottom: 8px;
+			}
+			.link {
+				color: #4299e1;
+				text-decoration: none;
+			}
+			.submit-button {
+				background-color: #4299e1;
+				color: white;
+				border: none;
+				border-radius: 8px;
+				padding: 14px 24px;
+				font-size: 16px;
+				font-weight: 600;
+				cursor: pointer;
+				margin-top: 16px;
+				width: 100%;
+				transition: background-color 0.2s;
+			}
+			.submit-button:hover {
+				background-color: #3182ce;
+			}
+			.dropdown-container {
+				position: relative;
+			}
+			.dropdown-header {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				padding: 12px;
+				border: 1px solid #ddd;
+				border-radius: 8px;
+				cursor: pointer;
+			}
+			.dropdown-menu {
+				position: absolute;
+				top: 100%;
+				left: 0;
+				right: 0;
+				background-color: white;
+				border: 1px solid #ddd;
+				border-radius: 8px;
+				margin-top: 4px;
+				max-height: 240px;
+				overflow-y: auto;
+				z-index: 10;
+				display: none;
+			}
+			.dropdown-menu.show {
+				display: block;
+			}
+			.dropdown-item {
+				padding: 10px 12px;
+				cursor: pointer;
+			}
+			.dropdown-item:hover {
+				background-color: #f5f5f5;
+			}
+			.dropdown-item.selected {
+				background-color: #ebf8ff;
+			}
+			.selected-options {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 6px;
+				min-height: 24px;
+			}
+			.selected-option {
+				display: flex;
+				align-items: center;
+				background-color: #ebf8ff;
+				border-radius: 4px;
+				padding: 4px 8px;
+				font-size: 14px;
+			}
+			.remove-option {
+				margin-left: 6px;
+				cursor: pointer;
+				font-weight: bold;
+			}
+			.dropdown-icon svg {
+				transition: transform 0.2s;
+			}
+			.rotate-180 {
+				transform: rotate(180deg);
+			}
+		</style>
 		<link rel="stylesheet" href="css/footer.css" />
 		<link rel="stylesheet" href="css/header.css" />
 		<link rel="stylesheet" href="css/debit-card.css" />
@@ -17,13 +335,13 @@
 			<header class="header">
 				<div class="header-content">
 					<a href="index.html">
-						<svg
+						<img
 							class="logo"
 							width="95"
 							height="34"
 							viewBox="0 0 95 34"
 							fill="none"
-							xmlns="http://www.w3.org/2000/svg"
+							src="img/1/Logo1.png"
 						>
 							<path
 								d="M47.2971 15.7154C46.6416 15.4632 45.7842 15.3877 44.8512 15.3877H39.6564V13.7738H48.5832V11H36V23.0031H44.5234C45.7086 23.0031 46.5909 22.9023 47.2468 22.6499C48.6337 22.1204 49.5667 20.8344 49.5667 19.1449C49.5667 17.4303 48.6841 16.245 47.2971 15.7154ZM45.4815 19.8762C45.2799 19.9519 45.0025 19.977 44.6493 19.977H39.6564V18.0605H44.6493C45.0529 18.0605 45.3806 18.0859 45.6329 18.2119C45.9354 18.3632 46.0868 18.6406 46.0868 18.9935C46.0868 19.3466 45.9103 19.7249 45.4815 19.8762Z"
@@ -41,7 +359,7 @@
 								d="M84.762 18.4643V23.0032H81.1055V11H84.762V15.5139H85.7706L90.1836 11H94.7728L88.9226 16.7494L94.9999 23.0032H90.133L85.7706 18.4643H84.762Z"
 								fill="#333333"
 							></path>
-						</svg>
+					</img>
 					</a>
 					<nav class="nav-links">
 						<a href="not_found.html" class="nav-item">Частным лицам</a>
@@ -96,6 +414,10 @@
 							</defs>
 						</svg>
 					</a>
+				<div class="theme-toggle light">
+    			<div class="theme-toggle-knob"></div>
+				</div>
+				</div>
 				</div>
 			</header>
 
@@ -261,11 +583,7 @@
 				<div class="left-panel">
 					<h2 class="card-title">Дебетовая карта Black</h2>
 					<article class="card-preview">
-						<img
-							src="img/2/black.png"
-							alt="Card preview"
-							class="debit-card-image"
-						/>
+						<img src="img/2/black.png" alt="Card preview" class="debit-card-image" id="previewImage">
 					</article>
 					<div class="cashback-info">
 						<div class="cashback-icon">₸</div>
@@ -275,144 +593,132 @@
 								С подпиской Pro лимит кэшбэка — 5000 ₸
 							</p>
 						</div>
-					</div>
+					</div>	
 				</div>
-
+		
 				<div class="right-panel">
-					<ddiv class="progress-section">
+					<div class="progress-section">
 						<p class="progress-text">Уже заполнено</p>
-						<p class="progress-percentage">5%</p>
+						<p class="progress-percentage" id="progressPercentage">5%</p>
 						<div class="progress-bar">
-							<div class="progress-bar-bg"></div>
-							<div class="progress-bar-fill"></div>
+							<div class="progress-bar-fill" id="progressBarFill"></div>
 						</div>
-					</ddiv>
-
+					</div>
+		
 					<div class="card-design-section">
 						<h3 class="section-title">Выберите дизайн карты</h3>
 						<div class="card-designs">
-							<button class="card-design active">
-								<img
-									src="img/2/card1.png"
-									alt="Card design 1"
-									class="design-image"
-								/>
-							</button>
-							<button class="card-design">
-								<img
-									src="img/2/card2.png"
-									alt="Card design 2"
-									class="design-image"
-								/>
-							</button>
-							<button class="card-design">
-								<img
-									src="img/2/card3.png"
-									alt="Card design 3"
-									class="design-image"
-								/>
-							</button>
-							<button class="card-design">
-								<img
-									src="img/2/card4.png"
-									alt="Card design 4"
-									class="design-image"
-								/>
-							</button>
-							<button class="card-design">
-								<img
-									src="img/2/card5.png"
-									alt="Card design 5"
-									class="design-image"
-								/>
-							</button>
-							<button class="card-design">
-								<img
-									src="img/2/card6.png"
-									alt="Card design 6"
-									class="design-image"
-								/>
-							</button>
+							<label class="card-design active">
+								<input type="radio" name="cardDesign" value="img/2/card1.png" checked class="sr-only">
+								<img src="img/2/card1.png" alt="Card design 1" class="design-image">
+							</label>
+							<label class="card-design">
+								<input type="radio" name="cardDesign" value="img/2/card2.png" class="sr-only">
+								<img src="img/2/card2.png" alt="Card design 2" class="design-image">
+							</label>
+							<label class="card-design">
+								<input type="radio" name="cardDesign" value="img/2/card3.png" class="sr-only">
+								<img src="img/2/card3.png" alt="Card design 3" class="design-image">
+							</label>
+							<label class="card-design">
+								<input type="radio" name="cardDesign" value="img/2/card4.png" class="sr-only">
+								<img src="img/2/card4.png" alt="Card design 4" class="design-image">
+							</label>
+							<label class="card-design">
+								<input type="radio" name="cardDesign" value="img/2/card5.png" class="sr-only">
+								<img src="img/2/card5.png" alt="Card design 5" class="design-image">
+							</label>
+							<label class="card-design">
+								<input type="radio" name="cardDesign" value="img/2/card6.png" class="sr-only">
+								<img src="img/2/card6.png" alt="Card design 6" class="design-image">
+							</label>
 						</div>
-
-						<form class="form-section">
+		
+						<form class="form-section" id="cardForm">
 							<div class="form-field category-select">
-								<label class="field-text"
-									>Выберите повышенный кэшбэк (четыре категории)</label
-								>
-								<button class="dropdown-icon">
-									<svg
-										width="16"
-										height="17"
-										viewBox="0 0 16 17"
-										fill="none"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path
-											fill-rule="evenodd"
-											clip-rule="evenodd"
-											d="M8 12.5639L2 6.72188L3.423 5.37988L8 9.87988L12.577 5.37988L14 6.72188L8 12.5639Z"
-											fill="black"
-											fill-opacity="0.4"
-										></path>
-									</svg>
-								</button>
+								<label class="field-text">Выберите повышенный кэшбэк (четыре категории)</label>
+								<div class="dropdown-container">
+									<div class="dropdown-header" id="categoryDropdown">
+										<div class="selected-options" id="selectedCategories"></div>
+										<button type="button" class="dropdown-icon" id="dropdownToggle">
+											<svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M8 12.5639L2 6.72188L3.423 5.37988L8 9.87988L12.577 5.37988L14 6.72188L8 12.5639Z" fill="black" fill-opacity="0.4"></path>
+											</svg>
+										</button>
+									</div>
+									<div class="dropdown-menu" id="categoriesMenu">
+										<div class="dropdown-item" data-value="Рестораны">Рестораны</div>
+										<div class="dropdown-item" data-value="Кафе и фастфуд">Кафе и фастфуд</div>
+										<div class="dropdown-item" data-value="Супермаркеты">Супермаркеты</div>
+										<div class="dropdown-item" data-value="Одежда и обувь">Одежда и обувь</div>
+										<div class="dropdown-item" data-value="Аптеки">Аптеки</div>
+										<div class="dropdown-item" data-value="Транспорт">Транспорт</div>
+										<div class="dropdown-item" data-value="Развлечения">Развлечения</div>
+										<div class="dropdown-item" data-value="Красота и здоровье">Красота и здоровье</div>
+										<div class="dropdown-item" data-value="Электроника">Электроника</div>
+										<div class="dropdown-item" data-value="АЗС">АЗС</div>
+									</div>
+								</div>
 							</div>
-
+		
 							<div class="form-field">
 								<label class="field-text">Фамилия, имя и отчество*</label>
+								<input type="text" id="fullName" required>
 								<span class="bonus-tag">+20%</span>
 							</div>
-
+		
 							<div class="form-row">
 								<div class="form-field half">
 									<label>Мобильный телефон*</label>
+									<input type="tel" id="phone" required placeholder="+7 (___) ___-__-__">
 								</div>
 								<div class="form-field half">
 									<label>Электронная почта</label>
+									<input type="email" id="email" placeholder="example@mail.com">
 								</div>
 							</div>
-
+		
 							<div class="form-field">
 								<label>Дата рождения*</label>
+								<input type="date" id="birthdate" required>
 							</div>
-
+		
 							<fieldset class="citizenship-section">
 								<legend class="citizenship-title">
 									Гражданство Казахстана?
 								</legend>
 								<div class="radio-group">
-									<label class="radio-option selected">
+									<label class="radio-option selected" id="citizenYes">
 										<span class="radio-text">Да</span>
 										<div class="radio-button">
 											<div class="radio-dot"></div>
 										</div>
+										<input type="radio" name="citizenship" value="yes" checked class="sr-only">
 									</label>
-									<label class="radio-option">
+									<label class="radio-option" id="citizenNo">
 										<span class="radio-text">Нет</span>
-										<div class="radio-button empty"></div>
+										<div class="radio-button">
+											<div class="radio-dot"></div>
+										</div>
+										<input type="radio" name="citizenship" value="no" class="sr-only">
 									</label>
 								</div>
 							</fieldset>
-
-							<hr class="form-divider" />
-
+		
+							<hr class="form-divider">
+		
 							<div class="terms-section">
 								<p class="terms-text">
 									Заполняя форму, я принимаю
 									<a href="not_found.html" class="link">условия передачи</a>
 								</p>
 								<p class="terms-text">
-									<a href="not_found.html" class="link"
-										>информации и использования карты до встречи</a
-									>
+									<a href="not_found.html" class="link">информации и использования карты до встречи</a>
 									и даю
 								</p>
 								<p class="terms-text">
-									<a href="not_found.html" class="link"
-										>согласие на получение информации о продуктах<br />и услугах
-										Банка и партнеров</a
-									>
+									<a href="not_found.html" class="link">согласие на получение информации о продуктах<br>и услугах
+										Банка и партнеров</a>
 								</p>
 								<button type="submit" class="submit-button">Оформить</button>
 							</div>
@@ -1121,5 +1427,32 @@
 				</section>
 			</footer>
 		</div>
+		<script src="card.js"></script>
+						<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const themeToggle = document.querySelector('.theme-toggle');
+    
+    themeToggle.addEventListener('click', function() {
+        document.documentElement.classList.toggle('dark-theme');
+        document.body.classList.toggle('dark-theme');
+        themeToggle.classList.toggle('light');
+        
+        // Опционально: сохраняем выбор пользователя в localStorage
+        if(document.documentElement.classList.contains('dark-theme')) {
+            localStorage.setItem('theme', 'dark');
+        } else {
+            localStorage.setItem('theme', 'light');
+        }
+    });
+    
+    // Проверяем сохраненную тему при загрузке страницы
+    const savedTheme = localStorage.getItem('theme');
+    if(savedTheme === 'dark') {
+        document.documentElement.classList.add('dark-theme');
+        document.body.classList.add('dark-theme');
+        themeToggle.classList.remove('light');
+    }
+});
+</script>
 	</body>
 </html>
